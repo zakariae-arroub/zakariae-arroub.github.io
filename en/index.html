@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Zakariae ARROUB – Mechanical Engineer | Portfolio</title>
+<meta content="Portfolio of Zakariae ARROUB, mechanical engineer (ENSET Mohammedia), 3 years in Powertrain R&amp;D at Capgemini Engineering for Stellantis, Master's student at Polytech Angers. Looking for a 6-month internship, March to August 2027." name="description"/>
+<meta content="#1f6b3a" name="theme-color"/>
+<meta content="Zakariae ARROUB" name="author"/>
+<meta content="Zakariae ARROUB – Ingénieur mécanique" property="og:title"/>
+<meta content="Développement produit, validation, APQP/PPAP, CATIA V5/V6. Recherche stage PFE mars–août 2027." property="og:description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--li:#1f6b3a;--li-dark:#03281d;--li-light:#e6f2ea;--bg:#f4f2ee;--card:#fff;--ink:#191919;--muted:#5e5e5e;--line:#e0dfdc;--gold:#915907;--gold-bg:#fcf0dc;--green:#3f8f4f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--li)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--li);z-index:50;transition:width .1s}
+header.hero{background:linear-gradient(100deg,var(--li-dark) 0%,var(--li) 55%,rgba(3,40,29,.55) 78%,rgba(3,40,29,.15) 100%),url(../img/banniere.jpg) right center/auto 100% no-repeat,var(--li-dark);color:#fff;padding:56px 0 46px;position:relative;overflow:hidden}
+header.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:rgba(255,255,255,.07)}
+.hero-grid{display:flex;gap:28px;align-items:center}
+.avatar{flex:0 0 120px;width:120px;height:120px;object-fit:cover;border-radius:50%;background:#fff;color:var(--li);display:flex;align-items:center;justify-content:center;font-family:"Space Grotesk",sans-serif;font-size:2.6rem;font-weight:700;border:4px solid rgba(255,255,255,.5);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.hero h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(1.9rem,5vw,3rem);margin:0 0 4px;letter-spacing:.3px}
+.hero .role{font-size:clamp(1rem,2.4vw,1.15rem);opacity:.95;margin:0 0 14px}
+.tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;font-weight:600;font-size:.92rem}
+.dot{width:9px;height:9px;border-radius:50%;background:#7fe3a8;box-shadow:0 0 0 0 rgba(127,227,168,.7);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(127,227,168,.7)}70%{box-shadow:0 0 0 10px rgba(127,227,168,0)}100%{box-shadow:0 0 0 0 rgba(127,227,168,0)}}
+.btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.95rem;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.btn.primary{background:#fff;color:var(--li-dark)}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff;background:transparent}
+.btn.blue{background:var(--li);color:#fff}
+.btn.blue:hover{background:var(--li-dark)}
+.btn.outline{border:1.5px solid var(--li);color:var(--li);background:#fff}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:10px 16px;min-width:120px}
+.stat b{display:block;font-family:"Space Grotesk",sans-serif;font-size:1.5rem}
+.stat span{font-size:.85rem;opacity:.9}
+nav.top{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:20}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--li);text-decoration:none;white-space:nowrap;margin-right:12px}
+.links{display:flex;gap:4px}
+.links a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.88rem;padding:7px 8px;border-radius:8px;white-space:nowrap}
+.links a:hover,.links a.active{color:var(--li);background:var(--li-light)}
+.burger{display:none;background:none;border:0;font-size:1.6rem;color:var(--li);cursor:pointer}
+@media(max-width:1340px){.burger{display:block}.links{position:absolute;top:56px;left:0;right:0;flex-direction:column;background:#fff;border-bottom:1px solid var(--line);padding:8px 16px;display:none}.links.open{display:flex}}
+@media(max-width:760px){.hero-grid{flex-direction:column;align-items:flex-start}.avatar{flex-basis:auto;width:96px;height:96px;font-size:2rem}}
+section{padding:44px 0 6px}
+h2{font-family:"Space Grotesk",sans-serif;font-size:1.6rem;margin:0 0 16px;display:flex;align-items:center;gap:10px}
+h2:before{content:"";width:6px;height:26px;border-radius:3px;background:var(--li)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:14px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.08);border-color:#c9d9ec}
+.card h3{margin:0;font-size:1.06rem}
+.meta{color:var(--muted);font-size:.92rem;margin:2px 0 10px}
+.card ul{margin:0;padding-left:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--li-light);color:var(--li-dark);padding:5px 12px;border-radius:999px;font-size:.88rem;font-weight:500}
+.proj .badge{display:inline-block;font-size:.76rem;font-weight:600;color:var(--gold);background:var(--gold-bg);padding:2px 10px;border-radius:999px;margin-bottom:8px}
+.proj ul{font-size:.93rem;color:#2c2c2c;padding-left:18px}
+.proj li{margin-bottom:4px}
+.proj p{margin:6px 0 10px;color:#2c2c2c;font-size:.95rem}
+.proj a.vid{font-weight:600;text-decoration:none;font-size:.92rem}
+.proj .more{display:none}
+.proj.open .more{display:block}
+#atelier .grid{grid-template-columns:repeat(auto-fill,minmax(400px,1fr))}@media(max-width:520px){#atelier .grid{grid-template-columns:1fr}}.schema{font-size:9.5px!important}.schema .fl{stroke-dasharray:7 5;animation:zfl 1.1s linear infinite}@keyframes zfl{to{stroke-dashoffset:-12}}@media(prefers-reduced-motion:reduce){.schema .fl{animation:none}}.schema{display:block;width:100%;height:auto;background:var(--bg);border-radius:10px;margin-bottom:12px;font-family:Inter,sans-serif;font-size:11px;fill:var(--ink)}.schema text{fill:var(--ink)}.atl svg{color:var(--li);margin-bottom:6px}
+.toggle{margin-top:10px;background:none;border:0;color:var(--li);font-weight:600;cursor:pointer;padding:0;font-family:inherit;font-size:.9rem}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.filters button{border:1.5px solid var(--line);background:#fff;color:var(--muted);padding:7px 14px;border-radius:999px;font-weight:600;font-size:.88rem;cursor:pointer;font-family:inherit;transition:all .15s}
+.filters button.on,.filters button:hover{border-color:var(--li);color:#fff;background:var(--li)}
+.hide{display:none!important}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:700px){.two{grid-template-columns:1fr}}
+.timeline .card{border-left:4px solid var(--li)}
+form.contact{display:grid;gap:10px;margin-top:12px}
+form.contact input,form.contact textarea,form.contact select{width:100%;padding:11px 12px;border:1.5px solid var(--line);border-radius:8px;font-family:inherit;font-size:.95rem;background:#fff}
+form.contact input:focus,form.contact textarea:focus,form.contact select:focus{outline:none;border-color:var(--li);box-shadow:0 0 0 3px var(--li-light)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+.note{font-size:.88rem;color:var(--green);min-height:1.2em}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+#top{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;background:var(--li);color:#fff;border:0;font-size:1.3rem;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:opacity .2s}
+#top.show{opacity:1;pointer-events:auto}
+footer{margin-top:40px;padding:26px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;background:#fff}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+.pillars{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.pillar .ic{width:42px;height:42px;border-radius:10px;background:var(--li-light);color:var(--li);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:10px}
+.pillar p{margin:6px 0 0;font-size:.92rem;color:#2c2c2c}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.steps button{flex:1 1 150px;border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:10px;text-align:left;cursor:pointer;font-family:inherit;transition:all .15s}
+.steps button b{display:block;color:var(--li);font-family:"Space Grotesk",sans-serif}
+.steps button span{font-size:.85rem;color:var(--muted)}
+.steps button.on{border-color:var(--li);background:var(--li-light)}
+.sal label{display:block;font-size:.88rem;font-weight:600;color:var(--li);margin:2px 0 6px}.sal[hidden]{display:none}
+#realisations .grid{align-items:start}.role{display:block;margin:6px 0 0!important;;font-size:.78rem;font-weight:600;color:var(--li);margin-left:4px}.fiche dt{font-weight:700;color:var(--li);font-size:.85rem;margin-top:8px}.fiche dd{margin:2px 0 0}.proj.open .fiche{display:block}
+.vcard{overflow:hidden}.vthumb{display:block;width:calc(100% + 28px);margin:-12px -14px 10px;height:130px;object-fit:cover;border-radius:10px 10px 0 0;background:#1d2a40}
+#atelier .atl{cursor:pointer}#atelier .atl:hover{border-color:var(--li);box-shadow:0 8px 22px rgba(0,0,0,.08);transform:translateY(-2px)}#atelier .atl .lnk{display:inline-block;margin-top:8px;color:var(--li);font-weight:600;font-size:.9rem}.atlhint{margin:-4px 0 12px;color:var(--muted);font-size:.92rem}.atlleg{margin-top:14px;font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}.atlleg i{display:inline-block;width:22px;height:4px;border-radius:2px;background:var(--c);margin-right:5px;vertical-align:middle}.schema text{paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round;font-weight:500}#modal.wide .box{max-width:1000px}.msch .schema{font-size:8px!important;background:#f6f7f5;max-width:720px;margin:0 auto}.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:12px}@media(max-width:700px){.mgrid{grid-template-columns:1fr}}.mgrid h4{margin:6px 0 6px;color:var(--li)}.mgrid ol,.mgrid ul{margin:0 0 8px;padding-left:20px}.mgrid li{margin:4px 0;font-size:.93rem}.tip{background:var(--li-light);border-radius:8px;padding:8px 10px;font-size:.9rem}
+.sups{display:flex;flex-wrap:wrap;gap:10px}.sup{background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:9px 18px;font-weight:600;font-family:"Space Grotesk",sans-serif;color:var(--ink);transition:all .15s}.sup:hover{border-color:var(--li);color:var(--li)}.jobs{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}.job .ji{font-size:1.6rem}.job h3{margin:6px 0 4px;font-size:1rem}.job p{margin:0;font-size:.9rem;color:var(--muted)}.job:hover{border-color:var(--li)}
+.sg{margin:10px 0 6px;font-size:.8rem;font-weight:700;color:var(--li);text-transform:uppercase;letter-spacing:.04em}
+body.dark .lvl{background:#2f3a33!important;color:#cfe8d6!important}body.dark .lvl.l3{background:#4a3a1d!important;color:#f3d79a!important}body.dark .chip{color:#d7e6dc}
+.xh{display:flex;gap:14px;align-items:center;margin-bottom:8px}.xh h3{margin:0}.mono{flex:0 0 48px;height:48px;border-radius:12px;background:var(--li-light);color:var(--li);border:1.5px solid var(--li);display:flex;align-items:center;justify-content:center;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:.9rem}
+.logos{display:flex;flex-direction:column;gap:6px;flex:0 0 auto}.logo{display:flex;align-items:center;justify-content:center;width:104px;height:50px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:3px 6px}.logo img{max-width:100%;max-height:100%;object-fit:contain}.sup.lg{background:#fff;padding:8px 16px;display:flex;align-items:center;height:52px}.sup.lg img{max-height:34px;max-width:130px;object-fit:contain}.sups{align-items:center}
+.apqp{margin-top:22px}.apt{margin:0 0 4px;font-size:1.1rem}.apqp h4{color:var(--li);margin:14px 0 8px}.aphs{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}@media(max-width:900px){.aphs{grid-template-columns:1fr 1fr}}@media(max-width:520px){.aphs{grid-template-columns:1fr}}.aph{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--li);border-radius:10px;padding:12px}.aph b{display:block;margin:4px 0;font-size:.92rem}.aph p{margin:0;font-size:.84rem;color:var(--muted)}.an{display:inline-flex;width:24px;height:24px;border-radius:50%;background:var(--li);color:#fff;font-weight:700;font-size:.8rem;align-items:center;justify-content:center}.ppap{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}.ppap li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:.88rem;display:flex;gap:8px;align-items:center}.ppap li span{color:var(--li);font-weight:700;font-family:"Space Grotesk",sans-serif}
+.matrix.two-col{grid-template-columns:repeat(2,1fr);margin-top:14px}@media(max-width:760px){.matrix.two-col{grid-template-columns:1fr}}.matrix{align-items:stretch}.matrix .card{margin:0}.ppd summary{cursor:pointer;color:var(--li);font-weight:700;margin:14px 0 8px;list-style:none}.ppd summary::before{content:"▸ "}.ppd[open] summary::before{content:"▾ "}header.hero .role{color:#fff;opacity:1;text-shadow:0 1px 6px rgba(0,0,0,.5);margin:0 0 20px!important}header.hero h1{text-shadow:0 2px 10px rgba(0,0,0,.35)}#projets .grid,#realisations .grid,.jobs{align-items:stretch}section{scroll-margin-top:70px}
+#realisations .pspan{grid-column:1/-1}.stepbox{min-height:110px}.jalons{position:relative}.jalons button{position:relative}.jalons button:not(:last-child)::after{content:"";position:absolute;right:-9px;top:50%;width:10px;height:2px;background:var(--li)}.plmleg{margin-top:16px}.plmleg h3{margin:0 0 10px}.plmleg .grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}.jalons button{flex:1 1 125px}.plmleg .card{margin:0;padding:14px 16px}.plmleg b{color:var(--li);font-family:"Space Grotesk",sans-serif;font-size:1.05rem}.plmleg p{margin:4px 0 0;font-size:.9rem}.jl{margin:4px 0 0;font-size:.92rem}.jl b{color:var(--li)}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.vcard{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;transition:all .15s}
+.vcard:hover{border-color:var(--li);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.vcard small{display:block;color:var(--li);font-weight:600;font-size:.78rem;margin-bottom:4px}
+.vcard span{font-size:.92rem;font-weight:500}
+.tl{position:relative;padding-left:22px;border-left:2px solid #c9d9ec;margin-left:6px}
+.tl .it{position:relative;margin-bottom:14px}
+.tl .it:before{content:"";position:absolute;left:-30px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--li);border:3px solid #fff;box-shadow:0 0 0 2px var(--li)}
+.tl .yr{font-weight:700;color:var(--li);font-size:.9rem}
+details.faq{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+details.faq summary{cursor:pointer;font-weight:600;list-style:none}
+details.faq summary:after{content:"+";float:right;color:var(--li);font-weight:700}
+details.faq[open] summary:after{content:"–"}
+details.faq p{margin:10px 0 0;color:#2c2c2c;font-size:.95rem}
+.target{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+@media print{nav.top,#top,#progress,.filters,.toggle,form.contact{display:none!important}.proj .more{display:block!important}.reveal{opacity:1!important;transform:none!important}header.hero{background:#1f6b3a!important;-webkit-print-color-adjust:exact}}
+.turbo-wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;align-items:start}
+@media(max-width:860px){.turbo-wrap{grid-template-columns:1fr}}
+.turbo-svg{background:#fff!important;border:1px solid var(--line);border-radius:12px;padding:10px}
+.turbo-svg svg{width:100%;height:auto;display:block}
+.hot{cursor:pointer;transition:opacity .15s}
+.hot .zone{fill:#1f6b3a;opacity:.10;stroke:#1f6b3a;stroke-width:2;stroke-dasharray:5 4;transition:opacity .15s}
+.hot:hover .zone,.hot.on .zone{opacity:.32}
+.hot text{font:700 14px Inter,sans-serif;fill:#03281d;pointer-events:none;paint-order:stroke;stroke:#fff;stroke-width:4px}
+.hot .pin{fill:#1f6b3a}
+#tpanel h3{margin:0 0 6px}
+#tpanel .lnk{margin-top:10px;display:inline-block;font-weight:600;cursor:pointer;color:var(--li);background:none;border:0;padding:0;font-family:inherit;font-size:.92rem}
+.matrix{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.matrix h3{display:flex;align-items:center;gap:8px}
+.lvl{font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:999px}
+.l1{background:#dff3e8;color:var(--green)}.l2{background:var(--li-light);color:var(--li-dark)}.l3{background:var(--gold-bg);color:var(--gold)}
+#theme{background:none;border:1.5px solid var(--line);border-radius:999px;padding:5px 10px;cursor:pointer;font-size:.95rem;margin-left:8px}
+body.dark{--li:#5fb36f;--bg:#1b1f23;--card:#262b31;--ink:#e9ecef;--muted:#a7b0ba;--line:#3a4149;--li-light:#1d3a2a;--gold-bg:#3d3220;--gold:#f0c674}
+body.dark nav.top{background:rgba(27,31,35,.95)}
+body.dark .links{background:transparent}
+@media(max-width:1340px){body.dark .links{background:#1b1f23}}
+body.dark .vcard,body.dark details.faq,body.dark .filters button,body.dark .steps button,body.dark form.contact input,body.dark form.contact textarea,body.dark form.contact select,body.dark footer{background:var(--card);color:var(--ink)}
+body.dark .proj ul,body.dark .proj p,body.dark .pillar p,body.dark details.faq p{color:#d0d5da}
+body.dark .chip{color:#9cc6f2}
+body.dark .btn.outline{background:transparent}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:60;padding:16px}
+#modal.open{display:flex}
+#modal .box{background:var(--card);color:var(--ink);max-width:680px;width:100%;max-height:88vh;overflow:auto;border-radius:14px;padding:24px 26px;position:relative}
+#modal .x{position:absolute;right:12px;top:10px;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--muted)}
+#modal dl{margin:12px 0 0}#modal dt{font-weight:700;color:var(--li);margin-top:12px}#modal dd{margin:4px 0 0}
+#lang{background:none;border:1.5px solid var(--line);border-radius:999px;padding:5px 10px;cursor:pointer;font-weight:700;font-size:.85rem;color:var(--li);margin-left:8px;text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zakariae ARROUB","jobTitle":"Mechanical Engineer – Product development and validation","url":"https://zakariae-arroub.github.io","sameAs":["https://www.linkedin.com/in/arroub-zakariae-88b610173","https://github.com/zakariae-arroub"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"ENSET Mohammedia"},{"@type":"CollegeOrUniversity","name":"Polytech Angers"}],"address":{"@type":"PostalAddress","addressLocality":"Angers","addressCountry":"FR"},"knowsAbout":["Conception mécanique","Développement produit","Validation produit","APQP","PPAP","CATIA V5","CATIA V6","Turbocompresseur","Analyse de défaillance","Industrialisation"]}</script>
+<link href="https://zakariae-arroub.github.io/" rel="canonical"/>
+<link href="https://zakariae-arroub.github.io/en/" hreflang="en" rel="alternate"/>
+<link href="https://zakariae-arroub.github.io/" hreflang="fr" rel="alternate"/>
+</head>
+<body>
+<div id="progress"></div>
+<header class="hero">
+<div class="wrap hero-grid">
+<img class="avatar" src="../img/photo.jpg" alt="Zakariae ARROUB" width="120" height="120">
+<div>
+<h1>Zakariae ARROUB</h1>
+<p class="role">Mechanical Engineer · Product development, validation &amp; technical project management</p>
+<span class="tag"><span class="dot"></span>Available for a 6-month final-year internship · March to August 2027 · anywhere in France</span>
+<div class="btns">
+<a class="btn primary" href="#contact">✉ Contact me</a>
+<a class="btn ghost" href="https://www.linkedin.com/in/arroub-zakariae-88b610173" rel="noopener" target="_blank">in · LinkedIn</a>
+</div>
+<div class="stats">
+<div class="stat"><b data-count="3">0</b><span>years in automotive R&amp;D</span></div>
+<div class="stat"><b data-count="7">0</b><span>flagship projects</span></div>
+<div class="stat"><b data-count="19">0</b><span>CAD project videos</span></div>
+<div class="stat"><b data-count="4">0</b><span>areas of expertise</span></div>
+</div>
+</div>
+</div>
+</header>
+<nav class="top"><div class="wrap">
+<a class="brand" href="#">Z. ARROUB</a>
+<div style="display:flex;align-items:center;order:3"><a href="../" hreflang="fr" id="lang">FR</a><button aria-label="Dark mode" id="theme">🌙</button><button aria-expanded="false" aria-label="Menu" class="burger">☰</button></div>
+<div class="links">
+<a href="#profil">Profile</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#realisations">Achievements</a><a href="#methode">Method</a><a href="#competences">Skills</a><a href="#formation">Education</a><a href="#projets">Projects</a><a href="#videos">Videos</a><a href="#atelier">Vehicle</a><a href="#metiers">Roles</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+</div>
+</div></nav>
+<main class="wrap">
+<section id="profil">
+<h2>Profile</h2>
+<div class="card reveal">
+<p style="margin:0">Graduate engineer in mechanical engineering of industrial systems from ENSET Mohammedia, I spent three years in Powertrain R&amp;D at Capgemini Engineering for Stellantis: product development, follow-up of validation plans, engine oil homologation, failure analysis and supplier coordination (APQP/PPAP), using CATIA V5/V6 every day.</p>
+<p style="margin:12px 0 0">Now in a Master's degree (M2) in Complex Systems Engineering (ISMP track) at Polytech Angers, I am looking for a <strong>6-month final-year internship, from March to August 2027</strong>, in R&amp;D, mechanical design, validation, industrialization or technical project management, ideally leading to a permanent position.</p>
+</div>
+</section>
+
+<section id="expertise">
+<h2>Areas of expertise</h2>
+<div class="pillars">
+<div class="card pillar reveal"><div class="ic">⚙</div><h3>Product development</h3><p>Product changes during series life, 3D packaging studies, architecture and material changes, cost reduction (VA/VE).</p></div>
+<div class="card pillar reveal"><div class="ic">🧪</div><h3>Validation &amp; testing</h3><p>DVP&amp;R validation plans: rig, engine, vehicle, thermal shock, wear, endurance. Analysis of results and part teardowns. Engine oil homologation: validation of laboratory tests, review of complete-engine test results with the specialist.</p></div>
+<div class="card pillar reveal"><div class="ic">🔍</div><h3>Quality &amp; failure analysis</h3><p>Field and plant incidents, root cause analysis, immediate and permanent actions, reliability (Weibull), DRBFM.</p></div>
+<div class="card pillar reveal"><div class="ic">🏭</div><h3>Industrialization &amp; suppliers</h3><p>APQP/PPAP in series life, dual and multi-sourcing, production transfers and localization, capacity, international coordination.</p></div>
+</div>
+</section>
+
+<section class="timeline" id="experience">
+<h2>Professional experience</h2>
+<div class="card reveal">
+<h3>Powertrain R&amp;D Engineer – Turbocharger</h3><div class="meta">Capgemini Engineering, for Stellantis · Dec 2025 – Sep 2026</div>
+<ul><li>Led a supplier change and its impacts: design, electrical and electronics, harnesses, calibration, after-sales.</li><li>QCDP management of product and process changes (ECR), from need analysis to validation.</li><li>Drove validation plans: gas stand and mapping, thermal shock, dimensional and material checks.</li><li>Failure analysis (root cause, reproduction, corrective actions) and cost reduction projects.</li><li>Coordination of engineering, quality, purchasing, homologation, production and the supplier.</li></ul>
+</div>
+<div class="card reveal">
+<h3>Powertrain R&amp;D Engineer – Engine moving parts</h3><div class="meta">Capgemini Engineering, for Stellantis · Sep 2023 – Dec 2025</div>
+<ul><li>Management of product and process changes (ECR): technical specifications, functional characteristics and drawings.</li><li>Supplier APQP / PPAP follow-up, with delegated PPAP approval on my scope.</li><li>Drove crank train validation plans: endurance, fatigue, dimensional and material checks.</li><li>Qualification of new sources (multi-sourcing) and follow-up of crankshaft material compliance.</li><li>Engine oil homologation (factory and service fill, several ACEA classes): validation of laboratory tests and review of complete-engine test results with the specialist.</li><li>Led several designers in parallel on 3D/2D changes in CATIA V6.</li></ul>
+</div>
+<div class="card reveal">
+<h3>Engineering intern – Optimization of spare-parts production resources (Dacia Lodgy)</h3><div class="meta">Renault Group · Feb – Jun 2023 · Engineering final-year project</div>
+<ul><li>Optimization and pooling of spare-parts manufacturing resources to keep parts available after end of series.</li><li>Six Sigma DMAIC approach: QQOQCP, Gantt, multi-criteria double Pareto, functional analysis (FAST).</li><li>Redesign in CATIA V5 of two welding fixtures: mechanism simulation, clearances and interferences, ergonomics.</li><li>Scenario comparison (SWOT) and standard end-of-series process.</li></ul>
+</div>
+<div class="two">
+<div class="card reveal">
+<h3>Maintenance engineering intern – Robotic welding cell</h3><div class="meta">Groupe Mécanique de Découpage (GMD) · Aug – Sep 2022</div>
+<ul><li>Improved maintenance of a robotic welding cell (FANUC robots, turntable).</li><li>Ladder programming of a Siemens S7-300 PLC in TIA Portal, validated in simulation (S7-PLCSIM).</li><li>WinCC supervision (PROFINET) of states and alarms to anticipate stoppages.</li></ul>
+</div>
+<div class="card reveal">
+<h3>Introductory internship – Workshop organization and mechanical manufacturing</h3><div class="meta">NUM Précision · Jun – Aug 2021</div>
+<ul><li>5S approach and waste identification (Lean Manufacturing).</li><li>Design in CATIA V5 of a raw material rack and a chip trolley.</li><li>CNC milling and process observation: turning, grinding, EDM.</li></ul>
+</div>
+</div>
+</section>
+
+<section id="realisations">
+  <h2>Flagship projects</h2>
+  <p class="meta" style="margin-top:-8px">Seven projects from my Powertrain R&amp;D experience, presented generically: no names, part numbers, failure causes or figures, out of respect for confidentiality.</p>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button class="on" data-f="all">All</button>
+    <button data-f="rd">R&amp;D &amp; design</button>
+    <button data-f="valid">Validation &amp; reliability</button>
+    <button data-f="indus">Industrialization &amp; quality</button>
+  </div>
+  <div class="grid">
+    <div class="card proj reveal" data-cat="rd valid">
+      <span class="badge">01 · Product development and qualification</span> <span class="role">My role: Technical coordination</span>
+      <h3>Qualification of an alternative boost actuator</h3>
+      <p><b>Context:</b> Secure supply continuity of a boosting component through an alternative solution.</p>
+      <dl class="more fiche"><dt>Objective</dt><dd>Qualify the alternative without degrading performance, robustness or vehicle integration.</dd><dt>My role</dt><dd>Coordinated the cross-functional impact analysis, built and followed validation plans, ran 3D packaging studies on several platforms.</dd><dt>Methodology</dt><dd>Impact analysis, validation plan (rig, engine, vehicle, endurance), tolerance stack-ups, project reviews.</dd><dt>Result</dt><dd>Consolidated technical file for the qualification decision.</dd><dt>Skills</dt><dd>CATIA V5 · 3D integration · Risk management · Cross-functional coordination · Validation</dd></dl>
+      <button class="toggle" type="button">Show details ▾</button>
+    </div>
+    <div class="card proj reveal" data-cat="indus">
+      <span class="badge">02 · Industrialization and supplier management</span> <span class="role">My role: Management</span>
+      <h3>Industrial changes in series production</h3>
+      <p><b>Context:</b> Tier 2 and tier 3 supplier changes: multi-sourcing, site transfers and localization.</p>
+      <dl class="more fiche"><dt>Objective</dt><dd>Ensure product equivalence before and after the change, with no disruption to series production.</dd><dt>My role</dt><dd>Managed many files in parallel with suppliers and functions, from risk ranking to approval.</dd><dt>Methodology</dt><dd>APQP, PPAP, DVP&amp;R, before / after comparisons, material teardowns.</dd><dt>Result</dt><dd>Files taken through to PPAP approval.</dd><dt>Skills</dt><dd>APQP / PPAP · Supplier management · Multi-project management · Materials analysis</dd></dl>
+      <button class="toggle" type="button">Show details ▾</button>
+    </div>
+    <div class="card proj reveal" data-cat="rd valid">
+      <span class="badge">03 · Mechanical design and robustness</span> <span class="role">My role: Technical contribution</span>
+      <h3>Evolution of a mechanical architecture</h3>
+      <p><b>Context:</b> Lasting robustness improvement of a mechanical boosting sub-assembly.</p>
+      <dl class="more fiche"><dt>Objective</dt><dd>Simplify the design (fewer parts, simpler kinematics) while improving reliability.</dd><dt>My role</dt><dd>Compared design generations and followed validation tests.</dd><dt>Methodology</dt><dd>Functional and kinematic analysis, wear and performance test plan.</dd><dt>Result</dt><dd>Reasoned comparison of solutions to support the decision.</dd><dt>Skills</dt><dd>Mechanical design · Functional analysis · Reliability · Validation</dd></dl>
+      <button class="toggle" type="button">Show details ▾</button>
+    </div>
+    <div class="card proj reveal" data-cat="valid">
+      <span class="badge">04 · Failure analysis and reliability</span> <span class="role">My role: Analysis and follow-up</span>
+      <h3>Investigation of mechanical non-conformities</h3>
+      <p><b>Context:</b> Non-conformities found at the assembly plant, in testing or at the customer.</p>
+      <dl class="more fiche"><dt>Objective</dt><dd>Identify root causes and prevent recurrence.</dd><dt>My role</dt><dd>Took part in root cause analyses, traceability analysis, follow-up of corrective actions.</dd><dt>Methodology</dt><dd>Root cause analysis, defect reproduction, production traceability, reliability analysis.</dd><dt>Result</dt><dd>Immediate and permanent corrective actions in place on the monitored scope.</dd><dt>Skills</dt><dd>Problem solving · Product quality · Reliability · Teamwork</dd></dl>
+      <button class="toggle" type="button">Show details ▾</button>
+    </div>
+    <div class="card proj reveal" data-cat="rd valid">
+      <span class="badge">05 · Materials optimization and VA/VE</span> <span class="role">My role: Validation</span>
+      <h3>Product simplification and material qualification</h3>
+      <p><b>Context:</b> Cost reduction initiatives on turbocharger components.</p>
+      <dl class="more fiche"><dt>Objective</dt><dd>Reduce cost without degrading thermal behaviour or durability.</dd><dt>My role</dt><dd>Defined and followed validation plans, followed risk analyses and supplier selection.</dd><dt>Methodology</dt><dd>VA/VE, risk analysis, thermal and thermomechanical validation, APQP.</dd><dt>Result</dt><dd>Changes validated on the tested scope and consolidated through PPAP.</dd><dt>Skills</dt><dd>VA/VE · Materials · Thermal validation · APQP</dd></dl>
+      <button class="toggle" type="button">Show details ▾</button>
+    </div>
+    <div class="card proj reveal" data-cat="valid indus">
+      <span class="badge">06 · Material validation</span> <span class="role">My role: Validation</span>
+      <h3>Validation of new material sources</h3>
+      <p><b>Context:</b> New material sources for mechanical components.</p>
+      <dl class="more fiche"><dt>Objective</dt><dd>Demonstrate the equivalence of the new material before series use.</dd><dt>My role</dt><dd>Defined and followed validation plans, analyzed and approved metallurgical reports.</dd><dt>Methodology</dt><dd>Fatigue and crack testing, metallurgical analysis (microstructure, hardness), comparison with the original source.</dd><dt>Result</dt><dd>New sources validated based on test results and metallurgical reports.</dd><dt>Skills</dt><dd>Materials · Metallurgy · Fatigue · Validation · APQP / PPAP</dd></dl>
+      <button class="toggle" type="button">Show details ▾</button>
+    </div>
+<div class="card proj reveal pspan" data-cat="valid">
+<span class="badge">07 · Engine oil homologation</span> <span class="role">My role: Validation</span>
+<h3>Engine oil homologation (factory fill and service fill)</h3>
+<p><b>Context:</b> Engine oils across several grades and ACEA classes, for factory fill and after-sales service fill.</p>
+<dl class="more fiche"><dt>Objective</dt><dd>Check that a formulation meets the carmaker’s specification before homologation.</dd><dt>My role</dt><dd>Validation of laboratory test results and review of complete-engine test results with the specialist.</dd><dt>Method</dt><dd>Check of physico-chemical properties (viscosity, volatility, oxidation, foaming, ash) and elastomer compatibility, then confirmation through engine tests (durability, deposits, wear).</dd><dt>Result</dt><dd>Homologation decision based on laboratory tests and confirmed by engine tests.</dd><dt>Skills</dt><dd>Lubrication · Laboratory tests · Engine tests · ACEA / SAE standards · Validation</dd></dl>
+<button class="toggle" type="button">Show details ▾</button>
+</div>
+</div>
+</section>
+
+<section id="fournisseurs">
+  <h2>Suppliers I have worked with</h2>
+  <p class="meta" style="margin-top:-6px">Technical coordination with powertrain tier 1 to tier 3 suppliers, for development, validation and series-life changes. Related projects remain confidential.</p>
+  <div class="sups reveal"><span class="sup lg" title="Garrett"><img src="../img/logos/garrett.png" alt="Garrett" loading="lazy"></span><span class="sup lg" title="Tenneco"><img src="../img/logos/tenneco.png" alt="Tenneco" loading="lazy"></span><span class="sup lg" title="Continental"><img src="../img/logos/continental.png" alt="Continental" loading="lazy"></span><span class="sup lg" title="Dayco"><img src="../img/logos/dayco.png" alt="Dayco" loading="lazy"></span><span class="sup lg" title="Mahindra CIE (MCIE)"><img src="../img/logos/mcie.png" alt="Mahindra CIE (MCIE)" loading="lazy"></span><span class="sup lg" title="Forges de Courcelles"><img src="../img/logos/forges.png" alt="Forges de Courcelles" loading="lazy"></span><span class="sup lg" title="MoldTecs"><img src="../img/logos/moldtecs.png" alt="MoldTecs" loading="lazy"></span><span class="sup lg" title="Chukai"><img src="../img/logos/chukai.png" alt="Chukai" loading="lazy"></span></div>
+</section>
+
+<section id="methode">
+  <h2>My approach to a product change</h2>
+  <p class="meta" style="margin-top:-6px">Milestone-based PLM approach, tracked in ENOVIA in seven phases: the change request (ECR) is investigated, designed and validated, then the change order (ECO) and the Industrial Release Order (RO) release the PDEF and PREA parts for series production. Each phase ends with a review (go / no-go). Click a phase.</p>
+  <div class="steps jalons">
+    <button class="on" data-s="0"><b>1 · Initialization</b><span>ECR raised</span></button>
+    <button data-s="1"><b>2 · Investigation</b><span>Impact analysis</span></button>
+    <button data-s="2"><b>3 · Design</b><span>PDEF / PREA solution</span></button>
+    <button data-s="3"><b>4 · Validation</b><span>ECR approved · ECO</span></button>
+    <button data-s="4"><b>5 · RO</b><span>Industrial Release Order</span></button>
+    <button data-s="5"><b>6 · Industrialization</b><span>Supplier PPAP</span></button>
+    <button data-s="6"><b>7 · Start of production</b><span>Series · Closure</span></button>
+  </div>
+  <div class="card stepbox reveal" id="stepbox"></div>
+  <div class="plmleg reveal"><h3>PLM glossary</h3><div class="grid"><div class="card"><b>ECR</b><p>Engineering Change Request: the change request, investigated and validated before decision.</p></div><div class="card"><b>ECO</b><p>Engineering Change Order: the order that applies the decision.</p></div><div class="card"><b>RO</b><p>Industrial Release Order: releases the parts for series production.</p></div><div class="card"><b>PDEF</b><p>Part definition: the designed technical reference (drawings, requirements).</p></div><div class="card"><b>PREA</b><p>Part realization: a supplier’s realization linked to a definition; one PDEF can have several PREA.</p></div></div></div></div>
+
+
+  <div class="apqp reveal">
+    <h3 class="apt">APQP and PPAP: securing industrialization after the ECR decision</h3>
+    <p class="meta">Once the change is approved, the supplier runs it through the APQP approach, then proves it with a PPAP file. I follow each phase and review the documents before approval. AIAG framework, presented generically.</p>
+    <h4>The 5 APQP phases</h4>
+    <div class="aphs"><div class="aph"><span class="an">1</span><b>Plan and define</b><p>Needs, quality and reliability targets, preliminary list of special characteristics.</p></div><div class="aph"><span class="an">2</span><b>Product design and development</b><p>Design FMEA (DFMEA), design reviews, drawings, DVP&amp;R validation plan.</p></div><div class="aph"><span class="an">3</span><b>Process design and development</b><p>Process flow, process FMEA (PFMEA), pre-launch control plan, work instructions.</p></div><div class="aph"><span class="an">4</span><b>Product and process validation</b><p>Significant production run (run at rate), capability studies, MSA, validation tests, PPAP submission.</p></div><div class="aph"><span class="an">5</span><b>Feedback and corrective action</b><p>Series follow-up, variation reduction, lessons learned and continuous improvement.</p></div></div>
+    <details class="ppd"><summary>The 18 PPAP elements</summary><ol class="ppap"><li><span>01</span>Design records (drawings)</li><li><span>02</span>Authorized engineering changes</li><li><span>03</span>Customer engineering approval</li><li><span>04</span>Design FMEA (DFMEA)</li><li><span>05</span>Process flow diagram</li><li><span>06</span>Process FMEA (PFMEA)</li><li><span>07</span>Control plan</li><li><span>08</span>Measurement system analysis (MSA)</li><li><span>09</span>Dimensional results</li><li><span>10</span>Material and performance results</li><li><span>11</span>Initial process capability studies</li><li><span>12</span>Qualified laboratory documentation</li><li><span>13</span>Appearance approval report</li><li><span>14</span>Sample production parts</li><li><span>15</span>Master sample</li><li><span>16</span>Checking aids</li><li><span>17</span>Customer-specific requirements</li><li><span>18</span>Part submission warrant (PSW)</li></ol></details>
+    <p class="tip">💡 The submission level (1 to 5) depends on the risk of the change: from the warrant alone (PSW) to the full file reviewed on site.</p>
+  </div>
+</section>
+
+<section id="competences">
+  <h2>Skills</h2>
+  <p class="meta" style="margin-top:-6px">Grouped by the context in which I actually applied them.</p>
+  <div class="matrix">
+    <div class="card reveal"><h3>In industry <span class="lvl l1">3 years</span></h3><div class="chips"><span class="chip">Product development</span><span class="chip">Change management (ECR, ECO, ENOVIA)</span><span class="chip">DVP&amp;R validation plans</span><span class="chip">Engine oil homologation</span><span class="chip">APQP / PPAP</span><span class="chip">Root cause analysis</span><span class="chip">Reliability (Weibull), DRBFM</span><span class="chip">Material validation and metallurgy</span><span class="chip">Multi-sourcing</span><span class="chip">Supplier coordination</span><span class="chip">3D packaging and clearances</span><span class="chip">CATIA V5 / V6</span><span class="chip">Leading designers (3D/2D changes)</span><span class="chip">Project reviews and milestones</span></div></div>
+    <div class="card reveal"><h3>Internships and projects <span class="lvl l2">Practiced</span></h3><p class="sg">Design and CAD</p><div class="chips"><span class="chip">CATIA V5 Part &amp; Assembly</span><span class="chip">Generative Shape Design</span><span class="chip">DMU Kinematics</span><span class="chip">GD&amp;T</span><span class="chip">Welding fixtures</span></div><p class="sg">Manufacturing</p><div class="chips"><span class="chip">Prismatic Machining, Mastercam</span><span class="chip">Conventional and CNC machining</span><span class="chip">Metrology</span></div><p class="sg">Methods</p><div class="chips"><span class="chip">Lean Manufacturing, 5S</span><span class="chip">Six Sigma DMAIC</span><span class="chip">Functional analysis (FAST)</span><span class="chip">Pareto, SWOT, costing</span></div><p class="sg">Automation</p><div class="chips"><span class="chip">Siemens S7-300, TIA Portal</span><span class="chip">WinCC supervision</span><span class="chip">FANUC robots</span><span class="chip">Arduino, PID control</span></div></div>
+    <div class="card reveal"><h3>In progress <span class="lvl l3">Master’s training</span></h3><p class="sg">Engineering</p><div class="chips"><span class="chip">Complex systems engineering</span><span class="chip">Product specification</span></div><p class="sg">Innovation</p><div class="chips"><span class="chip">Design thinking</span><span class="chip">Ideation and benchmarking</span><span class="chip">Low-tech</span><span class="chip">Applied AI</span></div><p class="sg">Management</p><div class="chips"><span class="chip">Innovation management</span><span class="chip">Change management</span><span class="chip">Workshop facilitation</span></div></div>
+  </div>
+  <div class="matrix two-col">
+    <div class="card reveal"><h3>Transversal skills</h3><div class="chips"><span class="chip">Cross-functional coordination</span><span class="chip">Supplier management</span><span class="chip">International teams</span><span class="chip">Multi-file management</span><span class="chip">Communication and reporting</span><span class="chip">Leading project reviews</span></div></div>
+    <div class="card reveal"><h3>Languages</h3><div class="chips"><span class="chip">French: fluent</span><span class="chip">English: professional (TOEIC planned)</span><span class="chip">Arabic: native</span></div></div>
+  </div>
+</section>
+
+<section id="formation">
+<h2>Education</h2>
+<div class="card reveal"><h3>Master's degree (M2) in Complex Systems Engineering, ISMP track</h3><div class="meta" style="margin-bottom:0">Polytech Angers · 2026 – 2027 · Mechanical engineering, project and innovation management</div></div>
+<div class="card reveal"><h3>Engineering degree – Mechanical engineering of industrial systems</h3><div class="meta" style="margin-bottom:0">ENSET Mohammedia · 2020 – 2023</div></div>
+<div class="card reveal"><h3>DEUST in Mathematics, Computer Science, Physics, Chemistry (MIPC)</h3><div class="meta" style="margin-bottom:0">FST Tangier · 2018 – 2020</div></div>
+<h3 style="margin:22px 0 12px">Career at a glance</h3>
+<div class="tl reveal">
+<div class="it"><div class="yr">2018 – 2020</div>DEUST MIPC, FST Tangier</div>
+<div class="it"><div class="yr">2020 – 2023</div>Mechanical engineering degree, ENSET Mohammedia · internships at NUM Précision, GMD, Renault Group · 1st prize EST Salé-INNOV 2022 (line-following robot)</div>
+<div class="it"><div class="yr">2023 – 2026</div>Powertrain R&amp;D Engineer, Capgemini Engineering for Stellantis</div>
+<div class="it"><div class="yr">2026 – 2027</div>Master's (M2) ISC, ISMP track, Polytech Angers</div>
+<div class="it"><div class="yr">March – August 2027</div><strong>Final-year internship: your company?</strong></div>
+</div>
+</section>
+
+<section id="certifications">
+<h2>Additional training</h2>
+<div class="two">
+<div class="card reveal"><h3>Functional dimensioning GD&amp;T (ASME Y14.5)</h3><p class="meta" style="margin-bottom:0">Geometric tolerancing and drawing reading.</p></div>
+<div class="card reveal"><h3>DRBFM</h3><p class="meta" style="margin-bottom:0">Design Review Based on Failure Mode: change-focused design review.</p></div>
+</div>
+</section>
+
+<section id="projets">
+<h2>Personal and academic projects</h2>
+<div class="grid">
+<div class="card proj reveal">
+<span class="badge">Ongoing · Master's (M2)</span>
+<h3>Modular wooden structure</h3>
+<p>Master's project at Polytech Angers (confidential, ongoing).</p>
+</div>
+
+<div class="card proj reveal">
+<span class="badge">1st prize · EST Salé-INNOV 2022</span>
+<h3>PID line-following robot</h3>
+<p>PID-controlled robot, presented as an FST Tangier graduate.</p>
+</div>
+<div class="card proj reveal">
+<span class="badge">ENSET · 2022</span>
+<h3>Automated color sorting of bottle caps</h3>
+<p>Working prototype: color detection with a TCS230 sensor and control by an Arduino board.</p>
+<a class="vid" href="https://www.linkedin.com/feed/update/urn:li:activity:7020052630034870272/" rel="noopener" target="_blank">▶ Watch the video</a>
+</div>
+</div>
+</section>
+
+<section id="videos">
+<h2>CAD video gallery (CATIA V5)</h2>
+<p class="meta" style="margin-top:-6px">19 projects on video: parts, surfaces, assemblies, kinematics and machining. Videos open on LinkedIn.</p>
+<div class="filters" id="vfilters"><button class="on" data-v="all">All (19)</button><button data-v="Assemblage">Assembly</button><button data-v="DMU Kinematics">DMU Kinematics</button><button data-v="Mécatronique">Mechatronics</button><button data-v="Pièce">Part</button><button data-v="Surfacique">Surface</button><button data-v="Usinage">Machining</button></div>
+<div class="vgrid"><a class="vcard" data-vc="Assemblage" href="https://www.linkedin.com/feed/update/urn:li:activity:6768739829023870976/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-6768739829023870976.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Assembly · ▶ video</small><span>Moteur Novel Reversing Engine 2</span></a>
+<a class="vcard" data-vc="DMU Kinematics" href="https://www.linkedin.com/feed/update/urn:li:activity:6769453596430938112/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-6769453596430938112.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>DMU Kinematics · ▶ video</small><span>Kinematic simulation of a mechanism</span></a>
+<a class="vcard" data-vc="Assemblage" href="https://www.linkedin.com/feed/update/urn:li:activity:6816046200849014784/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-6816046200849014784.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Assembly · ▶ video</small><span>Complete steam locomotive</span></a>
+<a class="vcard" data-vc="Surfacique" href="https://www.linkedin.com/feed/update/urn:li:activity:7020045161900449792/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020045161900449792.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Surface · ▶ video</small><span>Sheet metal part (surface)</span></a>
+<a class="vcard" data-vc="Surfacique" href="https://www.linkedin.com/feed/update/urn:li:activity:7020045767822213120/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020045767822213120.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Surface · ▶ video</small><span>Multi-section surface</span></a>
+<a class="vcard" data-vc="Surfacique" href="https://www.linkedin.com/feed/update/urn:li:activity:7020046492665016322/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020046492665016322.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Surface · ▶ video</small><span>Bottle (wall thickness)</span></a>
+<a class="vcard" data-vc="Surfacique" href="https://www.linkedin.com/feed/update/urn:li:activity:7020046857632378880/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020046857632378880.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Surface · ▶ video</small><span>Bottle (neck thread)</span></a>
+<a class="vcard" data-vc="Surfacique" href="https://www.linkedin.com/feed/update/urn:li:activity:7020046977547558913/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020046977547558913.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Surface · ▶ video</small><span>Surface shell</span></a>
+<a class="vcard" data-vc="Assemblage" href="https://www.linkedin.com/feed/update/urn:li:activity:7020048123112648704/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020048123112648704.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Assembly · ▶ video</small><span>Three-wheel motorcycle frame</span></a>
+<a class="vcard" data-vc="Surfacique" href="https://www.linkedin.com/feed/update/urn:li:activity:7020048348757811200/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020048348757811200.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Surface · ▶ video</small><span>Car body</span></a>
+<a class="vcard" data-vc="Surfacique" href="https://www.linkedin.com/feed/update/urn:li:activity:7020048850832748544/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020048850832748544.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Surface · ▶ video</small><span>Car hood</span></a>
+<a class="vcard" data-vc="Usinage" href="https://www.linkedin.com/feed/update/urn:li:activity:7020049457605967872/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020049457605967872.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Machining · ▶ video</small><span>Machining: facing, contouring, drilling</span></a>
+<a class="vcard" data-vc="Mécatronique" href="https://www.linkedin.com/feed/update/urn:li:activity:7020052630034870272/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020052630034870272.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Mechatronics · ▶ video</small><span>Automated cap sorting (Arduino)</span></a>
+<a class="vcard" data-vc="Usinage" href="https://www.linkedin.com/feed/update/urn:li:activity:7020054149316661248/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020054149316661248.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Machining · ▶ video</small><span>Machining: operations and tool paths</span></a>
+<a class="vcard" data-vc="Assemblage" href="https://www.linkedin.com/feed/update/urn:li:activity:7020060890766954496/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7020060890766954496.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Assembly · ▶ video</small><span>Mechanical assembly and constraints</span></a>
+<a class="vcard" data-vc="Surfacique" href="https://www.linkedin.com/feed/update/urn:li:activity:7025880245782073345/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7025880245782073345.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Surface · ▶ video</small><span>Car bumper</span></a>
+<a class="vcard" data-vc="Pièce" href="https://www.linkedin.com/feed/update/urn:li:activity:7030854713809989632/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7030854713809989632.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Part · ▶ video</small><span>Bicycle wheel</span></a>
+<a class="vcard" data-vc="Pièce" href="https://www.linkedin.com/feed/update/urn:li:activity:7030971923748544512/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7030971923748544512.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Part · ▶ video</small><span>Car wheel rim</span></a>
+<a class="vcard" data-vc="Surfacique" href="https://www.linkedin.com/feed/update/urn:li:activity:7032791714331287552/" rel="noopener" target="_blank"><img class="vthumb" src="../img/v-7032791714331287552.jpg?v=2" alt="" loading="lazy" width="640" height="360"><small>Surface · ▶ video</small><span>Design armchair</span></a></div>
+</section>
+
+<section id="atelier">
+  <h2>Automotive know-how: the systems I know</h2>
+  <p class="lead">From powertrain to body, the main vehicle systems.</p>
+  <p class="atlhint">👆 Click a card to open the detailed explanation.</p>
+  <div class="grid">
+    <div class="card reveal atl" tabindex="0" role="button"><svg class="schema" viewBox="0 0 345 190" role="img" aria-label="Petrol and Diesel engines"><defs><linearGradient id="mt0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#aeb8c3"/></linearGradient><linearGradient id="hc0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9534f"/><stop offset="1" stop-color="#3b8fd6"/></linearGradient></defs><path d="M14 40H118L136 54" fill="none" stroke="#3b82c4" stroke-width="8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M14 40H118L136 54" fill="none" stroke="#3b82c4" stroke-width="3" stroke-linejoin="round"/><path d="M194 54L212 40H306" fill="none" stroke="#e07a2e" stroke-width="8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M194 54L212 40H306" fill="none" stroke="#e07a2e" stroke-width="3" stroke-linejoin="round"/><rect x="104" y="20" width="122" height="30" rx="4" fill="url(#mt0)" stroke="#5b6773"/><rect x="96" y="48" width="10" height="96" fill="#2a9d8f" opacity=".35"/><rect x="224" y="48" width="10" height="96" fill="#2a9d8f" opacity=".35"/><rect x="106" y="48" width="12" height="96" fill="url(#mt0)" stroke="#5b6773"/><rect x="212" y="48" width="12" height="96" fill="url(#mt0)" stroke="#5b6773"/><path d="M118 50H212V70H118Z" fill="#e07a2e" opacity=".22"/><path d="M140 18V54M129 55H151" stroke="#3a4450" stroke-width="2.5"/><path d="M135 22l10 3-10 3 10 3-10 3 10 3" fill="none" stroke="#5b6773" stroke-width="1.2"/><path d="M190 18V54M179 55H201" stroke="#3a4450" stroke-width="2.5"/><path d="M185 22l10 3-10 3 10 3-10 3 10 3" fill="none" stroke="#5b6773" stroke-width="1.2"/><rect x="161" y="4" width="8" height="46" rx="2" fill="#3a4450"/><path d="M165 50l-6 9M165 50v10M165 50l6 9" stroke="#e07a2e" stroke-width="1.2"/><rect x="120" y="72" width="90" height="32" rx="4" fill="#9aa5b1" stroke="#5b6773"/><path d="M120 78H210M120 82H210M120 86H210" stroke="#3a4450" stroke-width=".8"/><circle cx="165" cy="93" r="5" fill="#3a4450"/><path d="M165 93L182 150" stroke="#6b7785" stroke-width="10" stroke-linecap="round"/><circle cx="165" cy="162" r="23" fill="none" stroke="#3a4450" stroke-width="2"/><path d="M142 168A23 23 0 0 0 188 168Z" fill="#5b6773" transform="rotate(200 165 162)"/><circle cx="165" cy="162" r="6" fill="#3a4450"/><circle cx="182" cy="150" r="6" fill="#3a4450"/><text x="14" y="32" text-anchor="start">Intake</text><text x="306" y="32" text-anchor="end">Exhaust</text><path d="M140 44L14 80" stroke="#8a95a3" stroke-width=".8"/><circle cx="140" cy="44" r="1.8" fill="#8a95a3"/><text x="10" y="84" text-anchor="start">Valves and springs</text><path d="M169 12L244 10" stroke="#8a95a3" stroke-width=".8"/><circle cx="169" cy="12" r="1.8" fill="#8a95a3"/><text x="240" y="14" text-anchor="start">Injector</text><path d="M205 60L244 62" stroke="#8a95a3" stroke-width=".8"/><circle cx="205" cy="60" r="1.8" fill="#8a95a3"/><text x="240" y="66" text-anchor="start">Combustion chamber</text><path d="M210 90L244 88" stroke="#8a95a3" stroke-width=".8"/><circle cx="210" cy="90" r="1.8" fill="#8a95a3"/><text x="240" y="92" text-anchor="start">Piston and rings</text><path d="M176 128L244 126" stroke="#8a95a3" stroke-width=".8"/><circle cx="176" cy="128" r="1.8" fill="#8a95a3"/><text x="240" y="130" text-anchor="start">Con rod</text><path d="M186 166L244 174" stroke="#8a95a3" stroke-width=".8"/><circle cx="186" cy="166" r="1.8" fill="#8a95a3"/><text x="240" y="178" text-anchor="start">Crankshaft</text><path d="M100 118L18 116" stroke="#8a95a3" stroke-width=".8"/><circle cx="100" cy="118" r="1.8" fill="#8a95a3"/><text x="14" y="120" text-anchor="start">Water jacket</text></svg>
+      <h3>Petrol and Diesel engines</h3><p>Operation, architecture and differences between the two technologies.</p><span class="lnk">See explanation ▸</span></div>
+    <div class="card reveal atl" tabindex="0" role="button"><svg class="schema" viewBox="0 0 345 190" role="img" aria-label="Air path and turbocharger"><defs><linearGradient id="mt1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#aeb8c3"/></linearGradient><linearGradient id="hc1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9534f"/><stop offset="1" stop-color="#3b8fd6"/></linearGradient></defs><rect x="8" y="22" width="46" height="32" rx="4" fill="#eef3f8" stroke="#5b6773"/><path d="M14 26v24" stroke="#9aa5b1"/><path d="M20 26v24" stroke="#9aa5b1"/><path d="M26 26v24" stroke="#9aa5b1"/><path d="M32 26v24" stroke="#9aa5b1"/><path d="M38 26v24" stroke="#9aa5b1"/><path d="M44 26v24" stroke="#9aa5b1"/><path d="M50 26v24" stroke="#9aa5b1"/><path d="M54 38H88" fill="none" stroke="#3b82c4" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M54 38H88" fill="none" stroke="#3b82c4" stroke-width="2.4" stroke-linejoin="round"/><path d="M128 58V40H150" fill="none" stroke="#3b82c4" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M128 58V40H150" fill="none" stroke="#3b82c4" stroke-width="2.4" stroke-linejoin="round"/><rect x="150" y="22" width="76" height="34" rx="3" fill="#eef3f8" stroke="#5b6773"/><path d="M156 25v28" stroke="#9fb3c8"/><path d="M163 25v28" stroke="#9fb3c8"/><path d="M170 25v28" stroke="#9fb3c8"/><path d="M177 25v28" stroke="#9fb3c8"/><path d="M184 25v28" stroke="#9fb3c8"/><path d="M191 25v28" stroke="#9fb3c8"/><path d="M198 25v28" stroke="#9fb3c8"/><path d="M205 25v28" stroke="#9fb3c8"/><path d="M212 25v28" stroke="#9fb3c8"/><path d="M219 25v28" stroke="#9fb3c8"/><path d="M226 39H272V62" fill="none" stroke="#3b82c4" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M226 39H272V62" fill="none" stroke="#3b82c4" stroke-width="2.4" stroke-linejoin="round"/><rect x="236" y="62" width="76" height="62" rx="6" fill="#dde3e9" stroke="#5b6773"/><circle cx="252" cy="93" r="6" fill="#fff" stroke="#5b6773"/><circle cx="267" cy="93" r="6" fill="#fff" stroke="#5b6773"/><circle cx="282" cy="93" r="6" fill="#fff" stroke="#5b6773"/><circle cx="297" cy="93" r="6" fill="#fff" stroke="#5b6773"/><path d="M272 124V146H132" fill="none" stroke="#e07a2e" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M272 124V146H132" fill="none" stroke="#e07a2e" stroke-width="2.4" stroke-linejoin="round"/><path d="M90 146H40V172H8" fill="none" stroke="#e07a2e" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M90 146H40V172H8" fill="none" stroke="#e07a2e" stroke-width="2.4" stroke-linejoin="round"/><circle cx="108" cy="58" r="22" fill="#d6e6f5" stroke="#3b82c4" stroke-width="2"/><path d="M108 44v28M94 58h28M98 48l20 20M118 48l-20 20" stroke="#3b82c4"/><circle cx="108" cy="140" r="22" fill="#f7dfcb" stroke="#e07a2e" stroke-width="2"/><path d="M108 126v28M94 140h28M98 130l20 20M118 130l-20 20" stroke="#e07a2e"/><rect x="102" y="80" width="12" height="38" fill="#3a4450"/><rect x="128" y="96" width="22" height="12" rx="2" fill="#3a4450"/><path d="M128 102H116" stroke="#3a4450" stroke-width="2"/><rect x="40" y="162" width="40" height="20" rx="8" fill="#e6e1d8" stroke="#5b6773"/><text x="8" y="16" text-anchor="start">Air filter</text><path d="M90 60L60 80" stroke="#8a95a3" stroke-width=".8"/><circle cx="90" cy="60" r="1.8" fill="#8a95a3"/><text x="64" y="84" text-anchor="end">Compressor</text><path d="M90 138L60 114" stroke="#8a95a3" stroke-width=".8"/><circle cx="90" cy="138" r="1.8" fill="#8a95a3"/><text x="64" y="118" text-anchor="end">Turbine</text><text x="150" y="16" text-anchor="start">Intercooler</text><text x="236" y="57" text-anchor="start">Intake manifold</text><path d="M236 110L226 136" stroke="#8a95a3" stroke-width=".8"/><circle cx="236" cy="110" r="1.8" fill="#8a95a3"/><text x="230" y="140" text-anchor="end">Engine</text><path d="M150 102L160 92" stroke="#8a95a3" stroke-width=".8"/><circle cx="150" cy="102" r="1.8" fill="#8a95a3"/><text x="156" y="96" text-anchor="start">Actuator</text><path d="M80 174L92 182" stroke="#8a95a3" stroke-width=".8"/><circle cx="80" cy="174" r="1.8" fill="#8a95a3"/><text x="88" y="186" text-anchor="start">Catalyst</text><path d="M102 98L32 100" stroke="#8a95a3" stroke-width=".8"/><circle cx="102" cy="98" r="1.8" fill="#8a95a3"/><text x="36" y="104" text-anchor="end">Shaft</text></svg>
+      <h3>Air path and turbocharger</h3><p>Intake, boosting, recirculation and exhaust.</p><span class="lnk">See explanation ▸</span></div>
+    <div class="card reveal atl" tabindex="0" role="button"><svg class="schema" viewBox="0 0 345 190" role="img" aria-label="Fuel system"><defs><linearGradient id="mt2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#aeb8c3"/></linearGradient><linearGradient id="hc2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9534f"/><stop offset="1" stop-color="#3b8fd6"/></linearGradient></defs><path d="M10 120Q10 108 22 108H96Q108 108 108 120V166Q108 178 96 178H22Q10 178 10 166Z" fill="#f6f1ea" stroke="#5b6773"/><path d="M11 146H107V166Q107 177 96 177H22Q11 177 11 166Z" fill="#c0392b" opacity=".2"/><rect x="28" y="132" width="16" height="30" rx="3" fill="#3a4450"/><path d="M36 132V118H128" fill="none" stroke="#c0392b" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M36 132V118H128" fill="none" stroke="#c0392b" stroke-width="2.4" stroke-linejoin="round"/><rect x="128" y="110" width="30" height="16" rx="6" fill="#f2f2f2" stroke="#5b6773"/><path d="M158 118H210" fill="none" stroke="#c0392b" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M158 118H210" fill="none" stroke="#c0392b" stroke-width="2.4" stroke-linejoin="round"/><rect x="210" y="104" width="46" height="40" rx="4" fill="url(#mt2)" stroke="#5b6773"/><circle cx="233" cy="156" r="10" fill="none" stroke="#3a4450" stroke-width="2"/><path d="M233 144v-8" stroke="#3a4450" stroke-width="3"/><path d="M256 120H302V38H292" fill="none" stroke="#c0392b" stroke-width="7.8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M256 120H302V38H292" fill="none" stroke="#c0392b" stroke-width="2.8" stroke-linejoin="round"/><rect x="120" y="30" width="172" height="16" rx="8" fill="url(#mt2)" stroke="#5b6773"/><rect x="282" y="20" width="10" height="12" fill="#3a4450"/><rect x="136" y="46" width="8" height="22" rx="2" fill="#c0392b"/><rect x="124" y="76" width="32" height="20" fill="#e8ecf0" stroke="#5b6773"/><path d="M140 70l-8 12M140 70v13M140 70l8 12" stroke="#c0392b" stroke-width="1"/><rect x="176" y="46" width="8" height="22" rx="2" fill="#c0392b"/><rect x="164" y="76" width="32" height="20" fill="#e8ecf0" stroke="#5b6773"/><path d="M180 70l-8 12M180 70v13M180 70l8 12" stroke="#c0392b" stroke-width="1"/><rect x="216" y="46" width="8" height="22" rx="2" fill="#c0392b"/><rect x="204" y="76" width="32" height="20" fill="#e8ecf0" stroke="#5b6773"/><path d="M220 70l-8 12M220 70v13M220 70l8 12" stroke="#c0392b" stroke-width="1"/><rect x="256" y="46" width="8" height="22" rx="2" fill="#c0392b"/><rect x="244" y="76" width="32" height="20" fill="#e8ecf0" stroke="#5b6773"/><path d="M260 70l-8 12M260 70v13M260 70l8 12" stroke="#c0392b" stroke-width="1"/><path d="M120 38H70V108" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="4 3"/><text x="58" y="186" text-anchor="middle">Tank</text><path d="M36 134L8 94" stroke="#8a95a3" stroke-width=".8"/><circle cx="36" cy="134" r="1.8" fill="#8a95a3"/><text x="4" y="98" text-anchor="start">In-tank pump</text><path d="M143 126L143 136" stroke="#8a95a3" stroke-width=".8"/><circle cx="143" cy="126" r="1.8" fill="#8a95a3"/><text x="143" y="140" text-anchor="middle">Filter</text><path d="M233 166L233 182" stroke="#8a95a3" stroke-width=".8"/><circle cx="233" cy="166" r="1.8" fill="#8a95a3"/><text x="233" y="186" text-anchor="middle">HP pump</text><text x="200" y="16" text-anchor="middle">Common rail</text><path d="M287 22L296 8" stroke="#8a95a3" stroke-width=".8"/><circle cx="287" cy="22" r="1.8" fill="#8a95a3"/><text x="300" y="12" text-anchor="end">Sensor</text><path d="M136 82L114 106" stroke="#8a95a3" stroke-width=".8"/><circle cx="136" cy="82" r="1.8" fill="#8a95a3"/><text x="118" y="110" text-anchor="end">Injectors</text><path d="M70 80L62 60" stroke="#8a95a3" stroke-width=".8"/><circle cx="70" cy="80" r="1.8" fill="#8a95a3"/><text x="66" y="64" text-anchor="end">Return</text></svg>
+      <h3>Fuel system</h3><p>Supply, pressurisation and injection.</p><span class="lnk">See explanation ▸</span></div>
+    <div class="card reveal atl" tabindex="0" role="button"><svg class="schema" viewBox="0 0 345 190" role="img" aria-label="Lubrication circuit"><defs><linearGradient id="mt3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#aeb8c3"/></linearGradient><linearGradient id="hc3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9534f"/><stop offset="1" stop-color="#3b8fd6"/></linearGradient></defs><path d="M70 26H252V128H70Z" fill="#eceff3" stroke="#5b6773"/><path d="M82 128H240L232 172H90Z" fill="#f4efe0" stroke="#5b6773"/><path d="M86 150H236L232 171H90Z" fill="#c99a10" opacity=".35"/><circle cx="118" cy="104" r="9" fill="#fff" stroke="#3a4450" stroke-width="2"/><circle cx="160" cy="104" r="9" fill="#fff" stroke="#3a4450" stroke-width="2"/><circle cx="202" cy="104" r="9" fill="#fff" stroke="#3a4450" stroke-width="2"/><path d="M100 32H232" stroke="#3a4450" stroke-width="3"/><path d="M128 166V136H112" fill="none" stroke="#c99a10" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M128 166V136H112" fill="none" stroke="#c99a10" stroke-width="2.4" stroke-linejoin="round"/><circle cx="104" cy="136" r="9" fill="#f6e7b5" stroke="#c99a10" stroke-width="2"/><path d="M104 129v14M97 136h14" stroke="#c99a10"/><path d="M95 136H44V112" fill="none" stroke="#c99a10" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M95 136H44V112" fill="none" stroke="#c99a10" stroke-width="2.4" stroke-linejoin="round"/><rect x="30" y="72" width="28" height="40" rx="5" fill="#f6e7b5" stroke="#c99a10"/><path d="M34 80h20M34 88h20M34 96h20M34 104h20" stroke="#c99a10" stroke-width=".8"/><path d="M44 72V54H240" fill="none" stroke="#c99a10" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M44 72V54H240" fill="none" stroke="#c99a10" stroke-width="2.4" stroke-linejoin="round"/><path d="M118 54V94" fill="none" stroke="#c99a10" stroke-width="6.8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M118 54V94" fill="none" stroke="#c99a10" stroke-width="1.8" stroke-linejoin="round"/><path d="M160 54V94" fill="none" stroke="#c99a10" stroke-width="6.8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M160 54V94" fill="none" stroke="#c99a10" stroke-width="1.8" stroke-linejoin="round"/><path d="M202 54V94" fill="none" stroke="#c99a10" stroke-width="6.8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M202 54V94" fill="none" stroke="#c99a10" stroke-width="1.8" stroke-linejoin="round"/><path d="M150 54V36" fill="none" stroke="#c99a10" stroke-width="6.6" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M150 54V36" fill="none" stroke="#c99a10" stroke-width="1.6" stroke-linejoin="round"/><path d="M240 54H276" fill="none" stroke="#c99a10" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M240 54H276" fill="none" stroke="#c99a10" stroke-width="2.4" stroke-linejoin="round"/><circle cx="290" cy="54" r="12" fill="#d6e6f5" stroke="#5b6773"/><path d="M290 66V160H236" fill="none" stroke="#c99a10" stroke-width="1.6" stroke-dasharray="4 3"/><path d="M118 114V146" stroke="#c99a10" stroke-width="1.2" stroke-dasharray="2 4"/><path d="M160 114V146" stroke="#c99a10" stroke-width="1.2" stroke-dasharray="2 4"/><path d="M202 114V146" stroke="#c99a10" stroke-width="1.2" stroke-dasharray="2 4"/><text x="160" y="186" text-anchor="middle">Oil sump</text><path d="M130 162L154 156" stroke="#8a95a3" stroke-width=".8"/><circle cx="130" cy="162" r="1.8" fill="#8a95a3"/><text x="150" y="160" text-anchor="start">Strainer</text><path d="M96 138L60 148" stroke="#8a95a3" stroke-width=".8"/><circle cx="96" cy="138" r="1.8" fill="#8a95a3"/><text x="64" y="152" text-anchor="end">Oil pump</text><text x="28" y="66" text-anchor="start">Filter</text><text x="150" y="48" text-anchor="middle">Main gallery</text><text x="160" y="122" text-anchor="middle">Crankshaft bearings</text><path d="M290 66L294 78" stroke="#8a95a3" stroke-width=".8"/><circle cx="290" cy="66" r="1.8" fill="#8a95a3"/><text x="298" y="82" text-anchor="end">Turbo</text><path d="M100 32L64 18" stroke="#8a95a3" stroke-width=".8"/><circle cx="100" cy="32" r="1.8" fill="#8a95a3"/><text x="60" y="22" text-anchor="start">Camshaft</text></svg>
+      <h3>Lubrication circuit</h3><p>Pump, filtration and oil distribution to components.</p><span class="lnk">See explanation ▸</span></div>
+    <div class="card reveal atl" tabindex="0" role="button"><svg class="schema" viewBox="0 0 345 190" role="img" aria-label="Cooling circuit"><defs><linearGradient id="mt4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#aeb8c3"/></linearGradient><linearGradient id="hc4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9534f"/><stop offset="1" stop-color="#3b8fd6"/></linearGradient></defs><rect x="108" y="64" width="98" height="74" rx="5" fill="#eceff3" stroke="#5b6773"/><path d="M116 72H198V130H116Z" fill="none" stroke="#2a9d8f" stroke-width="3" stroke-dasharray="6 4"/><rect x="246" y="26" width="56" height="128" rx="4" fill="#eef3f8" stroke="#5b6773"/><path d="M250 30v120" stroke="#b8c4d0"/><path d="M255 30v120" stroke="#b8c4d0"/><path d="M260 30v120" stroke="#b8c4d0"/><path d="M265 30v120" stroke="#b8c4d0"/><path d="M270 30v120" stroke="#b8c4d0"/><path d="M275 30v120" stroke="#b8c4d0"/><path d="M280 30v120" stroke="#b8c4d0"/><path d="M285 30v120" stroke="#b8c4d0"/><path d="M290 30v120" stroke="#b8c4d0"/><path d="M295 30v120" stroke="#b8c4d0"/><circle cx="274" cy="90" r="18" fill="none" stroke="#3a4450" stroke-dasharray="3 3"/><path d="M274 90l12-6M274 90l-6 12M274 90l-6-12" stroke="#3a4450" stroke-width="3"/><rect x="206" y="58" width="22" height="16" rx="3" fill="#fde3d6" stroke="#d9534f"/><path d="M228 66H246" fill="none" stroke="#d9534f" stroke-width="7.8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M228 66H246" fill="none" stroke="#d9534f" stroke-width="2.8" stroke-linejoin="round"/><path d="M274 154V176H92V138" fill="none" stroke="#3b8fd6" stroke-width="7.8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M274 154V176H92V138" fill="none" stroke="#3b8fd6" stroke-width="2.8" stroke-linejoin="round"/><circle cx="92" cy="126" r="12" fill="#dff1ef" stroke="#2a9d8f" stroke-width="2"/><path d="M92 116v20M82 126h20M85 119l14 14M99 119l-14 14" stroke="#2a9d8f"/><path d="M104 120H108" fill="none" stroke="#2a9d8f" stroke-width="7.4" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M104 120H108" fill="none" stroke="#2a9d8f" stroke-width="2.4" stroke-linejoin="round"/><rect x="14" y="40" width="54" height="30" rx="4" fill="#fde3d6" stroke="#d9534f"/><path d="M20 44v22" stroke="#e8a99a"/><path d="M28 44v22" stroke="#e8a99a"/><path d="M36 44v22" stroke="#e8a99a"/><path d="M44 44v22" stroke="#e8a99a"/><path d="M52 44v22" stroke="#e8a99a"/><path d="M60 44v22" stroke="#e8a99a"/><path d="M130 64V30H41V40" fill="none" stroke="#d9534f" stroke-width="6.8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M130 64V30H41V40" fill="none" stroke="#d9534f" stroke-width="1.8" stroke-linejoin="round"/><path d="M41 70V126H80" fill="none" stroke="#3b8fd6" stroke-width="6.8" stroke-opacity=".18" stroke-linejoin="round"/><path class="fl" d="M41 70V126H80" fill="none" stroke="#3b8fd6" stroke-width="1.8" stroke-linejoin="round"/><rect x="150" y="6" width="56" height="20" rx="5" fill="#e6f4f2" stroke="#2a9d8f"/><path d="M206 16H274V26" fill="none" stroke="#2a9d8f" stroke-width="1.4" stroke-dasharray="4 3"/><path d="M86 134L88 156" stroke="#8a95a3" stroke-width=".8"/><circle cx="86" cy="134" r="1.8" fill="#8a95a3"/><text x="92" y="160" text-anchor="end">Water pump</text><text x="157" y="104" text-anchor="middle">Water jacket</text><text x="217" y="50" text-anchor="middle">Thermostat</text><path d="M290 150L308 182" stroke="#8a95a3" stroke-width=".8"/><circle cx="290" cy="150" r="1.8" fill="#8a95a3"/><text x="312" y="186" text-anchor="end">Radiator</text><path d="M286 98L308 116" stroke="#8a95a3" stroke-width=".8"/><circle cx="286" cy="98" r="1.8" fill="#8a95a3"/><text x="312" y="120" text-anchor="end">Fan</text><text x="41" y="86" text-anchor="middle">Heater core</text><text x="178" y="20" text-anchor="middle">Expansion tank</text></svg>
+      <h3>Cooling circuit</h3><p>Water pump, thermostat, heat exchangers and thermal control.</p><span class="lnk">See explanation ▸</span></div>
+    <div class="card reveal atl" tabindex="0" role="button"><svg class="schema" viewBox="0 0 345 190" role="img" aria-label="Crank train"><defs><linearGradient id="mt5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#aeb8c3"/></linearGradient><linearGradient id="hc5" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9534f"/><stop offset="1" stop-color="#3b8fd6"/></linearGradient></defs><circle cx="26" cy="140" r="24" fill="url(#mt5)" stroke="#5b6773"/><circle cx="26" cy="140" r="25" fill="none" stroke="#3a4450" stroke-width="3" stroke-dasharray="2 2"/><circle cx="26" cy="140" r="5" fill="#3a4450"/><path d="M50 140H286" stroke="#3a4450" stroke-width="7"/><rect x="70" y="116" width="6" height="30" fill="#5b6773"/><rect x="88" y="116" width="6" height="30" fill="#5b6773"/><path d="M68 164A14 10 0 0 1 96 164" fill="#5b6773" opacity=".7"/><circle cx="82" cy="122" r="5" fill="#3a4450"/><rect x="61" y="14" width="42" height="98" fill="none" stroke="#b8c2cc" stroke-width="1.5"/><rect x="64" y="22" width="36" height="22" rx="3" fill="#9aa5b1" stroke="#5b6773"/><circle cx="82" cy="36" r="3" fill="#3a4450"/><path d="M82 36L82 122" stroke="#6b7785" stroke-width="7" stroke-linecap="round"/><rect x="120" y="134" width="6" height="30" fill="#5b6773"/><rect x="138" y="134" width="6" height="30" fill="#5b6773"/><path d="M118 116A14 10 0 0 0 146 116" fill="#5b6773" opacity=".7"/><circle cx="132" cy="158" r="5" fill="#3a4450"/><rect x="111" y="14" width="42" height="98" fill="none" stroke="#b8c2cc" stroke-width="1.5"/><rect x="114" y="48" width="36" height="22" rx="3" fill="#9aa5b1" stroke="#5b6773"/><circle cx="132" cy="62" r="3" fill="#3a4450"/><path d="M132 62L132 158" stroke="#6b7785" stroke-width="7" stroke-linecap="round"/><rect x="170" y="134" width="6" height="30" fill="#5b6773"/><rect x="188" y="134" width="6" height="30" fill="#5b6773"/><path d="M168 116A14 10 0 0 0 196 116" fill="#5b6773" opacity=".7"/><circle cx="182" cy="158" r="5" fill="#3a4450"/><rect x="161" y="14" width="42" height="98" fill="none" stroke="#b8c2cc" stroke-width="1.5"/><rect x="164" y="48" width="36" height="22" rx="3" fill="#9aa5b1" stroke="#5b6773"/><circle cx="182" cy="62" r="3" fill="#3a4450"/><path d="M182 62L182 158" stroke="#6b7785" stroke-width="7" stroke-linecap="round"/><rect x="220" y="116" width="6" height="30" fill="#5b6773"/><rect x="238" y="116" width="6" height="30" fill="#5b6773"/><path d="M218 164A14 10 0 0 1 246 164" fill="#5b6773" opacity=".7"/><circle cx="232" cy="122" r="5" fill="#3a4450"/><rect x="211" y="14" width="42" height="98" fill="none" stroke="#b8c2cc" stroke-width="1.5"/><rect x="214" y="22" width="36" height="22" rx="3" fill="#9aa5b1" stroke="#5b6773"/><circle cx="232" cy="36" r="3" fill="#3a4450"/><path d="M232 36L232 122" stroke="#6b7785" stroke-width="7" stroke-linecap="round"/><circle cx="300" cy="140" r="11" fill="none" stroke="#3a4450" stroke-width="2" stroke-dasharray="3 2"/><circle cx="300" cy="24" r="11" fill="none" stroke="#3a4450" stroke-width="2" stroke-dasharray="3 2"/><path d="M289 140V24M311 140V24" stroke="#5b6773" stroke-width="1.5" stroke-dasharray="3 2"/><text x="132" y="186" text-anchor="middle">Crankshaft</text><text x="4" y="10" text-anchor="start">Pistons</text><text x="160" y="186" text-anchor="start"></text><path d="M26 164L44 174" stroke="#8a95a3" stroke-width=".8"/><circle cx="26" cy="164" r="1.8" fill="#8a95a3"/><text x="40" y="178" text-anchor="start">Flywheel</text><path d="M300 152L308 182" stroke="#8a95a3" stroke-width=".8"/><circle cx="300" cy="152" r="1.8" fill="#8a95a3"/><text x="312" y="186" text-anchor="end">Timing drive</text><path d="M232 80L254 84" stroke="#8a95a3" stroke-width=".8"/><circle cx="232" cy="80" r="1.8" fill="#8a95a3"/><text x="250" y="88" text-anchor="start">Con rod</text><path d="M132 118L112 96" stroke="#8a95a3" stroke-width=".8"/><circle cx="132" cy="118" r="1.8" fill="#8a95a3"/><text x="116" y="100" text-anchor="end">Counterweight</text></svg>
+      <h3>Crank train</h3><p>Crankshaft, connecting rods, pistons and timing drive.</p><span class="lnk">See explanation ▸</span></div>
+    <div class="card reveal atl" tabindex="0" role="button"><svg class="schema" viewBox="0 0 345 190" role="img" aria-label="Body"><defs><linearGradient id="mt6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#aeb8c3"/></linearGradient><linearGradient id="hc6" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9534f"/><stop offset="1" stop-color="#3b8fd6"/></linearGradient></defs><path d="M150 22L196 20L222 28L182 34Z" fill="#fde3d6" stroke="#e07a2e"/><path d="M24 112L32 90L88 82L120 50H210L246 80L296 88L302 112Z" fill="var(--li-light)" stroke="var(--li)" stroke-width="2"/><path d="M124 56H162V80H104ZM168 56H206L230 80H168Z" fill="#fff" stroke="var(--li)"/><path d="M102 84H164V112H102ZM166 84H232V112H166Z" fill="none" stroke="#e07a2e" stroke-width="2"/><path d="M30 92L86 84L88 76L36 82Z" fill="#fde3d6" stroke="#e07a2e" transform="rotate(-14 86 84)"/><path d="M248 82L296 90L300 70L262 56Z" fill="#fde3d6" stroke="#e07a2e" transform="rotate(-16 250 82)"/><circle cx="74" cy="114" r="15" fill="#fff" stroke="#3a4450" stroke-width="3"/><circle cx="254" cy="114" r="15" fill="#fff" stroke="#3a4450" stroke-width="3"/><rect x="28" y="140" width="272" height="40" rx="6" fill="#eceff3" stroke="#5b6773"/><path d="M40 150H290M40 170H290" stroke="#3a4450" stroke-width="3"/><path d="M70 150V170" stroke="#5b6773" stroke-width="2"/><path d="M120 150V170" stroke="#5b6773" stroke-width="2"/><path d="M170 150V170" stroke="#5b6773" stroke-width="2"/><path d="M220 150V170" stroke="#5b6773" stroke-width="2"/><path d="M262 150V170" stroke="#5b6773" stroke-width="2"/><text x="166" y="44" text-anchor="middle">Body side</text><path d="M284 96L296 124" stroke="#8a95a3" stroke-width=".8"/><circle cx="284" cy="96" r="1.8" fill="#8a95a3"/><text x="300" y="128" text-anchor="end">Doors (closures)</text><path d="M134 108L134 132" stroke="#8a95a3" stroke-width=".8"/><circle cx="134" cy="108" r="1.8" fill="#8a95a3"/><text x="134" y="136" text-anchor="middle">Door openings</text><path d="M190 24L190 10" stroke="#8a95a3" stroke-width=".8"/><circle cx="190" cy="24" r="1.8" fill="#8a95a3"/><text x="186" y="14" text-anchor="start">Hood</text><path d="M50 80L12 60" stroke="#8a95a3" stroke-width=".8"/><circle cx="50" cy="80" r="1.8" fill="#8a95a3"/><text x="8" y="64" text-anchor="start">Front closure</text><path d="M280 64L314 48" stroke="#8a95a3" stroke-width=".8"/><circle cx="280" cy="64" r="1.8" fill="#8a95a3"/><text x="318" y="52" text-anchor="end">Tailgate</text><text x="164" y="186" text-anchor="middle">Underbody (bottom view)</text><path d="M290 152L314 156" stroke="#8a95a3" stroke-width=".8"/><circle cx="290" cy="152" r="1.8" fill="#8a95a3"/><text x="318" y="160" text-anchor="end">Side rails</text></svg>
+      <h3>Body</h3><p>Body sides, closures and underbody.</p><span class="lnk">See explanation ▸</span></div>
+    <div class="card reveal atl" tabindex="0" role="button"><svg class="schema" viewBox="0 0 345 190" role="img" aria-label="Chassis"><defs><linearGradient id="mt7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#aeb8c3"/></linearGradient><linearGradient id="hc7" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9534f"/><stop offset="1" stop-color="#3b8fd6"/></linearGradient></defs><path d="M40 12H300" stroke="#3a4450" stroke-width="5"/><path d="M186 12V30" stroke="#3a4450" stroke-width="3"/><path d="M186 30L176 102" stroke="#6b7785" stroke-width="10" stroke-linecap="round"/><path d="M188 34L183 70" stroke="#3a4450" stroke-width="4"/><path d="M172 40l26 4M170 50l26 4M168 60l26 4M166 70l26 4M164 80l26 4" stroke="var(--li)" stroke-width="3"/><rect x="228" y="62" width="44" height="116" rx="16" fill="#3a3f45"/><rect x="236" y="76" width="28" height="88" rx="6" fill="#9aa5b1"/><rect x="216" y="92" width="8" height="58" rx="2" fill="#c0392b" opacity=".8"/><rect x="210" y="86" width="14" height="16" rx="3" fill="#c0392b"/><path d="M176 100L200 104L204 146L184 150Z" fill="url(#mt7)" stroke="#5b6773"/><path d="M204 121H232" stroke="#3a4450" stroke-width="5"/><path d="M184 150L90 156" stroke="var(--li)" stroke-width="7" stroke-linecap="round"/><circle cx="90" cy="156" r="6" fill="#fff" stroke="#3a4450" stroke-width="2"/><path d="M190 126L104 124" stroke="#3b82c4" stroke-width="4"/><rect x="40" y="116" width="66" height="14" rx="4" fill="#dbe7f3" stroke="#3b82c4"/><path d="M150 154V84H60" fill="none" stroke="#c99a10" stroke-width="3"/><path d="M210 180H300" stroke="#8a95a3" stroke-width="2"/><path d="M172 46L146 26" stroke="#8a95a3" stroke-width=".8"/><circle cx="172" cy="46" r="1.8" fill="#8a95a3"/><text x="150" y="30" text-anchor="end">Spring</text><path d="M190 40L218 22" stroke="#8a95a3" stroke-width=".8"/><circle cx="190" cy="40" r="1.8" fill="#8a95a3"/><text x="214" y="26" text-anchor="start">Damper</text><path d="M260 170L312 182" stroke="#8a95a3" stroke-width=".8"/><circle cx="260" cy="170" r="1.8" fill="#8a95a3"/><text x="316" y="186" text-anchor="end">Tyre and rim</text><path d="M218 96L312 70" stroke="#8a95a3" stroke-width=".8"/><circle cx="218" cy="96" r="1.8" fill="#8a95a3"/><text x="316" y="74" text-anchor="end">Disc and caliper</text><path d="M196 146L202 166" stroke="#8a95a3" stroke-width=".8"/><circle cx="196" cy="146" r="1.8" fill="#8a95a3"/><text x="206" y="170" text-anchor="end">Knuckle</text><path d="M120 154L64 172" stroke="#8a95a3" stroke-width=".8"/><circle cx="120" cy="154" r="1.8" fill="#8a95a3"/><text x="60" y="176" text-anchor="start">Lower arm</text><path d="M70 116L44 104" stroke="#8a95a3" stroke-width=".8"/><circle cx="70" cy="116" r="1.8" fill="#8a95a3"/><text x="40" y="108" text-anchor="start">Tie rod</text><path d="M100 84L58 74" stroke="#8a95a3" stroke-width=".8"/><circle cx="100" cy="84" r="1.8" fill="#8a95a3"/><text x="54" y="78" text-anchor="start">Anti-roll bar</text></svg>
+      <h3>Chassis</h3><p>Suspension, steering, braking and axles.</p><span class="lnk">See explanation ▸</span></div>
+  </div>
+  <div class="atlleg"><b>Colour key :</b> <i style="--c:#3b82c4"></i>Fresh air <i style="--c:#e07a2e"></i>Exhaust gas <i style="--c:#c0392b"></i>Fuel <i style="--c:#c99a10"></i>Oil <i style="--c:#d9534f"></i>Hot coolant <i style="--c:#3b8fd6"></i>Cooled coolant</div>
+</section>
+
+<section id="metiers">
+  <h2>Roles I can take on</h2>
+  <p class="meta" style="margin-top:-6px">Positions where my background is directly applicable, and why.</p>
+  <div class="grid jobs"><div class="card reveal job"><span class="ji">🛠</span><h3>R&amp;D / mechanical design engineer</h3><p>CATIA V5/V6 design, 3D integration, tolerance stack-ups, architecture evolution.</p></div><div class="card reveal job"><span class="ji">🔬</span><h3>Validation and test engineer</h3><p>Building and following validation plans: rig, engine, vehicle, endurance, fatigue.</p></div><div class="card reveal job"><span class="ji">🚗</span><h3>Product development engineer</h3><p>Driving product changes from request (ECR) to start of production.</p></div><div class="card reveal job"><span class="ji">🤝</span><h3>Supplier quality engineer (SQE)</h3><p>APQP / PPAP, coordination of tier 1 to 3 suppliers, metallurgical report review.</p></div><div class="card reveal job"><span class="ji">🏭</span><h3>Industrialization / process engineer</h3><p>Site transfers, localization, multi-sourcing, production launch.</p></div><div class="card reveal job"><span class="ji">🔍</span><h3>Product quality / reliability engineer</h3><p>Root cause analysis, traceability, corrective actions, reliability analysis.</p></div><div class="card reveal job"><span class="ji">📋</span><h3>Technical project manager</h3><p>Project reviews, milestones, cross-functional coordination and go / no-go decisions.</p></div><div class="card reveal job"><span class="ji">🔁</span><h3>Change management engineer (PLM)</h3><p>ECR / ECO / RO cycle in ENOVIA, PDEF and PREA management.</p></div></div>
+</section>
+
+<section id="faq">
+<h2>Recruiter FAQ</h2>
+<details class="faq reveal"><summary>When are you available?</summary><p>6-month full-time final-year internship, from 1 March to 31 August 2027, with an internship agreement from Polytech Angers.</p></details>
+<details class="faq reveal"><summary>Are you willing to relocate?</summary><p>Yes, anywhere in France. I am currently based in Angers.</p></details>
+<details class="faq reveal"><summary>What does your professional experience bring to an internship?</summary><p>Three years in Powertrain R&amp;D at Capgemini Engineering for Stellantis: I work independently on validation plans, failure analysis, APQP/PPAP files and coordination with suppliers and functions.</p></details>
+<details class="faq reveal"><summary>Which software do you use?</summary><p>CATIA V5 and V6 daily: Part Design, Assembly Design, Generative Shape Design, DMU Kinematics, Prismatic Machining and drawings. At Stellantis, I led several designers in parallel on 3D/2D changes in CATIA V6.</p></details>
+<details class="faq reveal"><summary>What is your English level?</summary><p>Professional English, used in written exchanges and meetings with international suppliers. TOEIC planned.</p></details>
+<details class="faq reveal"><summary>Are you looking for a job after the internship?</summary><p>Yes, the prospect of a permanent position after the internship matters a lot to me.</p></details>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="two">
+<div class="card reveal">
+<h3>Let's talk about your project</h3>
+<p class="meta">Available for a 6-month final-year internship, from 1 March to 31 August 2027, anywhere in France. Based in Angers.</p>
+<p style="margin:0 0 6px"><strong>Email:</strong> <span id="mail">arroub.zakariae12@gmail.com</span></p>
+<div class="btns" style="margin-top:8px">
+<button class="btn blue" id="copy" type="button">Copy email</button>
+<a class="btn outline" href="https://www.linkedin.com/in/arroub-zakariae-88b610173" rel="noopener" target="_blank">LinkedIn message</a>
+</div>
+<p class="note" id="copynote"></p>
+</div>
+<div class="card reveal">
+<h3>Send a message</h3>
+<form class="contact" id="form">
+<div class="row">
+<input name="nom" placeholder="Your name" required=""/>
+<input name="societe" placeholder="Company"/>
+</div>
+<select name="objet">
+<option>Internship offer</option>
+<option value="Permanent job offer">Permanent job offer</option>
+<option>Interview request</option>
+<option>Question about my background</option>
+<option>Other</option>
+</select>
+<div class="sal" id="sal" hidden><label>Proposed salary (gross per year)</label><div class="row"><input name="smin" type="number" min="0" step="1000" inputmode="numeric" placeholder="Minimum €"><input name="smax" type="number" min="0" step="1000" inputmode="numeric" placeholder="Maximum €"></div></div>
+<textarea name="message" placeholder="Your message" required="" rows="4"></textarea>
+<button class="btn blue" type="submit">Send ✉</button>
+<p class="note" id="formnote"></p>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Zakariae ARROUB · Mechanical Engineer · <a href="https://www.linkedin.com/in/arroub-zakariae-88b610173" rel="noopener" target="_blank">LinkedIn</a></div></footer>
+<div aria-modal="true" id="modal" role="dialog"><div class="box"><button aria-label="Close" class="x">×</button><div id="mbody"></div></div></div>
+<button aria-label="Back to top" id="top">↑</button>
+<script>
+(function(){
+  var mail="arroub.zakariae12@gmail.com";
+  var burger=document.querySelector('.burger'),links=document.querySelector('.links');
+  burger.addEventListener('click',function(){var o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open')})});
+  var prog=document.getElementById('progress'),top=document.getElementById('top');
+  var secs=[].slice.call(document.querySelectorAll('main section[id]'));
+  function onScroll(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;prog.style.width=p+'%';top.classList.toggle('show',h.scrollTop>600);
+    var cur='';secs.forEach(function(s){if(s.getBoundingClientRect().top<120)cur=s.id});
+    links.querySelectorAll('a').forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+cur)});}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)})}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
+  document.querySelectorAll('[data-count]').forEach(function(el){var n=+el.dataset.count,i=0;var t=setInterval(function(){i++;el.textContent=i;if(i>=n)clearInterval(t)},Math.max(30,900/n))});
+  document.querySelectorAll('.toggle:not(.star)').forEach(function(b){b.addEventListener('click',function(){var c=b.closest('.proj');var o=c.classList.toggle('open');b.textContent=o?'Hide details ▴':'Show details ▾'})});
+  var fb=document.querySelectorAll('.filters button');fb.forEach(function(b){b.addEventListener('click',function(){fb.forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;document.querySelectorAll('#realisations .proj').forEach(function(c){c.classList.toggle('hide',f!=='all'&&(' '+c.dataset.cat+' ').indexOf(' '+f+' ')<0)})})});
+  document.getElementById('copy').addEventListener('click',function(){var n=document.getElementById('copynote');try{navigator.clipboard.writeText(mail).then(function(){n.textContent='Email copied ✔'},function(){n.textContent='Copy: '+mail})}catch(e){n.textContent='Copy: '+mail}});
+  (function(){var f=document.getElementById('form'),z=document.getElementById('sal');function u(){z.hidden=f.objet.value!=='Permanent job offer'}f.objet.addEventListener('change',u);u()})();
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();var f=e.target;var sub=f.objet.value+(f.societe.value?' – '+f.societe.value:'');var sal=(f.objet.value==='Permanent job offer'&&(f.smin.value||f.smax.value))?'\n\nProposed salary (gross per year): '+(f.smin.value?Number(f.smin.value).toLocaleString('fr-FR')+' €':'?')+' – '+(f.smax.value?Number(f.smax.value).toLocaleString('fr-FR')+' €':'?'):'';var body='Hello Zakariae,\n\n'+f.message.value+sal+'\n\n'+f.nom.value+(f.societe.value?'\n'+f.societe.value:'');
+    document.getElementById('formnote').textContent='Your email app opens with the message ready. Otherwise, write to '+mail;
+    window.location.href='mailto:'+mail+'?subject='+encodeURIComponent(sub)+'&body='+encodeURIComponent(body);});
+  var steps=[["Initialize the change request", "I clarify why the change is needed: cost, capacity, robustness, supply continuity or a regulatory requirement.", "ECR raised in ENOVIA, identification of the affected PDEF and PREA parts and vehicle programs.", "Go / no-go: the request is admissible and the study can start.", "ECR, rationale, scope of affected parts"], ["Investigate the ECR with the functions", "I assess with each function the impact of the change: design, materials, calibration, electrical, homologation, warranty, capacity and logistics.", "ECR under investigation: function feedback and associated risks collected.", "Go / no-go: impacts and risks are known and acceptable to start design.", "Cross-functional impact analysis, first identified risks"], ["Design the solution and validation plan", "I define the solution with the functions and the supplier, then build a validation plan suited to the risk level: dimensional and material checks, rig, thermal shock, wear, engine and vehicle endurance.", "Change of the definition (PDEF) or new supplier realization (PREA) linked to the same definition.", "Go / no-go: solution and validation plan frozen.", "Solution definition, validation plan, schedule and responsibilities"], ["Validate and decide", "I drive and follow the validation plans, consolidate reports and analyze part teardowns and metallurgical reports. I present results and residual risks to decision boards; if something deviates, I launch root cause analysis.", "Validation evidence attached to the ECR, ECR approval then creation of the ECO.", "Go / no-go: product validated, change order launched.", "Test reports, teardown summary, traced decision, ECO"], ["Issue the Industrial Release Order (RO)", "I make sure the technical file is complete and consistent before industrial launch.", "RO issued: PDEF and PREA parts released for series production.", "Go / no-go: parts released for industrialization.", "RO, released PDEF and PREA, updated BOMs"], ["Industrialize with the supplier", "I coordinate PPAP preparation and approval and the update of drawings and documents with the supplier and the functions.", "PPAP elements attached and documentation updated.", "Go / no-go: PPAP approved, series production authorized.", "Approved PPAP file, updated documentation"], ["Start production and close", "I follow the start of production and first feedback, then capture lessons learned.", "ECO applied in series and change file closed.", "Closure: change applied, file closed.", "Follow-up of first feedback, lessons learned"]];
+  var sb=document.getElementById('stepbox'),sbtn=document.querySelectorAll('.steps button');
+  function showStep(i){var t=steps[i];sb.innerHTML='<h3>'+t[0]+'</h3><p style="margin:8px 0 10px">'+t[1]+'</p><p class="jl"><b>In the PLM:</b> '+t[2]+'</p><p class="jl"><b>End-of-phase review:</b> '+t[3]+'</p><p class="jl"><b>Deliverables:</b> '+t[4]+'</p>';sbtn.forEach(function(b){b.classList.toggle('on',+b.dataset.s===i)})}
+  sbtn.forEach(function(b){b.addEventListener('click',function(){showStep(+b.dataset.s)})});showStep(0);
+  var vb=document.querySelectorAll('#vfilters button');vb.forEach(function(b){b.addEventListener('click',function(){vb.forEach(function(x){x.classList.remove('on')});b.classList.add('on');var v=b.dataset.v;document.querySelectorAll('.vcard').forEach(function(c){c.classList.toggle('hide',v!=='all'&&c.dataset.vc!==v)})})});
+  var T={};
+  var tp=document.getElementById('tpanel'),hots=document.querySelectorAll('.hot');
+  function showT(k){var t=T[k];tp.innerHTML='<h3>'+t[0]+'</h3><p style="margin:0">'+t[1]+'</p><button class="lnk" data-f="'+t[2]+'">See related achievements →</button>';hots.forEach(function(h){h.classList.toggle('on',h.dataset.k===k)});
+    tp.querySelector('.lnk').addEventListener('click',function(){var b=document.querySelector('.filters button[data-f="'+t[2]+'"]');if(b)b.click();document.getElementById('realisations').scrollIntoView({behavior:'smooth'})});}
+  hots.forEach(function(h){h.addEventListener('click',function(){showT(h.dataset.k)})});if(tp)showT('act');
+  var th=document.getElementById('theme');function setTheme(d){document.body.classList.toggle('dark',d);th.textContent=d?'☀':'🌙';try{localStorage.setItem('za-theme',d?'dark':'light')}catch(e){}}
+  var saved=null;try{saved=localStorage.getItem('za-theme')}catch(e){}
+  setTheme(saved==='dark');
+  th.addEventListener('click',function(){setTheme(!document.body.classList.contains('dark'))});
+  var STAR=[];
+  var md=document.getElementById('modal'),mb=document.getElementById('mbody');
+  document.querySelectorAll('.star').forEach(function(b){b.addEventListener('click',function(){var t=STAR[+b.dataset.star];var title=b.closest('.proj').querySelector('h3').textContent;
+    mb.innerHTML='<h3 style="margin:0">'+title+'</h3><dl><dt>Situation</dt><dd>'+t[0]+'</dd><dt>Task</dt><dd>'+t[1]+'</dd><dt>Actions</dt><dd>'+t[2]+'</dd><dt>Result</dt><dd>'+t[3]+'</dd></dl>';md.classList.add('open')})});
+  var ATL=[["Convert the chemical energy of fuel into rotational mechanical energy.", ["Intake: the intake valve opens, the piston goes down and draws in air (or air-fuel mixture).", "Compression: valves close, the piston rises and compresses the mixture.", "Combustion-expansion: the spark (petrol) or self-ignition under high pressure (Diesel) pushes the piston down.", "Exhaust: the exhaust valve opens and the piston expels burnt gases."], [["Piston and rings", "seal the chamber and transmit the force."], ["Con rod", "links the piston to the crankshaft."], ["Crankshaft", "turns reciprocating motion into rotation."], ["Valves", "open and close intake and exhaust."], ["Injector", "meters the fuel precisely."], ["Water jacket", "removes heat around the cylinder."]], "Petrol: spark ignition. Diesel: compression ignition, higher compression ratio and injection pressures.", ["Chamber sealing and ring wear", "Cylinder head thermal behaviour", "Balancing and vibrations"]], ["Increase the amount of intake air to get more power from a smaller engine (downsizing).", ["Exhaust gases spin the turbine.", "The turbine drives the compressor through a common shaft.", "The compressor compresses fresh air, which heats up.", "The intercooler cools the air to increase its density.", "Air enters the engine; the actuator controls boost pressure."], [["Air filter", "protects the compressor from particles."], ["Compressor", "compresses fresh air."], ["Turbine", "recovers exhaust gas energy."], ["Actuator", "controls variable geometry or the wastegate."], ["Intercooler", "cools compressed air."], ["Catalyst", "treats pollutants."]], "Variable geometry directs exhaust flow onto the turbine to deliver torque at low engine speed.", ["Actuator control and response", "Turbine-side thermal behaviour", "Oil-side sealing and bearings"]], ["Store fuel and deliver it to the injectors at the right pressure and time.", ["The in-tank pump sends fuel to the engine.", "The filter traps impurities.", "The high-pressure pump raises the pressure.", "The common rail stores pressurised fuel; a sensor measures it.", "Injectors spray fuel into the cylinder; excess fuel returns to the tank."], [["In-tank pump", "low-pressure supply."], ["Filter", "protects the injectors."], ["HP pump", "pressurises the fuel."], ["Common rail", "shared pressurised reservoir."], ["Sensor", "measures pressure for the ECU."], ["Injectors", "spray a precise quantity."]], "Higher pressure means finer spray and cleaner combustion.", ["High-pressure joint sealing", "Fuel cleanliness", "Injector metering accuracy"]], ["Reduce friction, cool and clean moving parts.", ["The pump draws oil from the sump through the strainer.", "The filter traps particles.", "The main gallery distributes pressurised oil.", "Oil lubricates crankshaft bearings, camshaft and turbo.", "Oil drains back to the sump by gravity."], [["Oil sump", "oil reservoir."], ["Strainer", "pre-filter at the pickup."], ["Oil pump", "pressurises the oil."], ["Filter", "traps wear particles."], ["Main gallery", "distributes oil to components."], ["Bearings", "friction areas to lubricate."]], "The turbo spins very fast: it needs a continuous, clean oil supply.", ["Hot oil pressure", "Gasket sealing", "Bearing wear"]], ["Keep the engine at its optimal operating temperature.", ["The water pump circulates the coolant.", "Coolant absorbs heat in the water jacket.", "When cold, the thermostat stays closed to warm up faster.", "When hot, the thermostat opens: coolant flows through the radiator, cooled by air and the fan.", "The heater core warms the cabin; the expansion tank absorbs expansion."], [["Water pump", "circulates coolant."], ["Water jacket", "exchanges heat with the engine."], ["Thermostat", "controls temperature."], ["Radiator", "rejects heat to the air."], ["Fan", "forces airflow at standstill or low speed."], ["Expansion tank", "absorbs coolant expansion."]], "An engine running too cold uses more fuel and pollutes more; too hot, it gets damaged.", ["Circuit sealing", "Thermostat opening", "Heat soak after hot shutdown"]], ["Turn the back-and-forth motion of the pistons into continuous rotation.", ["Combustion pushes the piston down.", "The con rod transmits the force to the crankpin.", "The crankshaft turns; its counterweights balance the masses.", "The flywheel smooths rotation.", "The timing drive synchronises camshafts with the crankshaft."], [["Pistons", "receive gas pressure."], ["Con rods", "link pistons and crankshaft."], ["Crankshaft", "engine output shaft."], ["Counterweights", "limit vibrations."], ["Flywheel", "smooths torque pulses."], ["Timing drive", "synchronising chain or belt."]], "On a 4-cylinder engine, crankpins are offset so that one combustion occurs every half turn.", ["Fatigue strength", "Bearing lubrication", "Balancing"]], ["Form the vehicle structure, protect occupants and carry all systems.", ["The underbody (floor and side rails) carries the systems and absorbs impacts.", "Body sides form the door openings and side stiffness.", "Closures include doors, hood and tailgate.", "The whole body is assembled then protected against corrosion."], [["Body side", "side structure and door openings."], ["Closures", "doors, hood, tailgate."], ["Underbody", "vehicle floor."], ["Side rails", "beams that absorb crash energy."]], "Gaps and flushness between closures and body are part of perceived quality.", ["Gaps and flushness", "Structural stiffness", "Corrosion resistance"]], ["Keep the vehicle in contact with the road: comfort, handling, braking and steering.", ["The tyre transmits forces to the road.", "The spring carries the vehicle weight; the damper controls oscillations.", "The lower arm and knuckle guide the wheel.", "The tie rod steers the wheel.", "Disc and caliper brake; the anti-roll bar limits body roll."], [["Spring", "carries vehicle mass."], ["Damper", "controls body motion."], ["Lower arm", "guides the wheel."], ["Knuckle", "wheel and brake carrier."], ["Disc and caliper", "braking."], ["Anti-roll bar", "cornering stability."]], "Axle geometry settings affect handling and tyre wear.", ["Durability of chassis parts", "Noise and vibrations", "Axle geometry"]]];var AL=["Role", "How it works", "Key components", "Validation focus points", "See explanation ▸", "Click a card to open the detailed explanation.", "Colour key", "Fresh air", "Exhaust gas", "Fuel", "Oil", "Hot coolant", "Cooled coolant"];document.querySelectorAll('#atelier .atl').forEach(function(c,i){function op(){var d=ATL[i];var sv=c.querySelector('svg').outerHTML;mb.innerHTML='<h3 style="margin:0 0 4px">'+c.querySelector('h3').textContent+'</h3><p class="meta" style="margin:0 0 10px"><b>'+AL[0]+' :</b> '+d[0]+'</p><div class="msch">'+sv+'</div><div class="mgrid"><div><h4>'+AL[1]+'</h4><ol>'+d[1].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ol><p class="tip">💡 '+d[3]+'</p></div><div><h4>'+AL[2]+'</h4><ul class="comp">'+d[2].map(function(x){return '<li><b>'+x[0]+'</b> : '+x[1]+'</li>'}).join('')+'</ul><h4>'+AL[3]+'</h4><ul>'+d[4].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div></div>';md.classList.add('open','wide')}c.addEventListener('click',op);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();op()}})});
+  function closeM(){md.classList.remove('open','wide')}
+  md.addEventListener('click',function(e){if(e.target===md)closeM()});md.querySelector('.x').addEventListener('click',closeM);document.addEventListener('keydown',function(e){if(e.key==='Escape')closeM()});
+})();
+</script>
+</body>
+</html>
